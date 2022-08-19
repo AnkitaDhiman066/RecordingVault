@@ -1,0 +1,1027 @@
+// !$*UTF8*$!
+{
+	archiveVersion = 1;
+	classes = {
+	};
+	objectVersion = 54;
+	objects = {
+
+/* Begin PBXBuildFile section */
+		00E356F31AD99517003FC87E /* RecorderVaultTests.m in Sources */ = {isa = PBXBuildFile; fileRef = 00E356F21AD99517003FC87E /* RecorderVaultTests.m */; };
+		0C80B921A6F3F58F76C31292 /* libPods-RecorderVault.a in Frameworks */ = {isa = PBXBuildFile; fileRef = 5DCACB8F33CDC322A6C60F78 /* libPods-RecorderVault.a */; };
+		13B07FBC1A68108700A75B9A /* AppDelegate.mm in Sources */ = {isa = PBXBuildFile; fileRef = 13B07FB01A68108700A75B9A /* AppDelegate.mm */; };
+		13B07FBF1A68108700A75B9A /* Images.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 13B07FB51A68108700A75B9A /* Images.xcassets */; };
+		13B07FC11A68108700A75B9A /* main.m in Sources */ = {isa = PBXBuildFile; fileRef = 13B07FB71A68108700A75B9A /* main.m */; };
+		7699B88040F8A987B510C191 /* libPods-RecorderVault-RecorderVaultTests.a in Frameworks */ = {isa = PBXBuildFile; fileRef = 19F6CBCC0A4E27FBF8BF4A61 /* libPods-RecorderVault-RecorderVaultTests.a */; };
+		81AB9BB82411601600AC10FF /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 81AB9BB72411601600AC10FF /* LaunchScreen.storyboard */; };
+		CEF67B29762E429E88FBBE39 /* AntDesign.ttf in Resources */ = {isa = PBXBuildFile; fileRef = AFAD1F0454184BFB9CBC176A /* AntDesign.ttf */; };
+		156A8A3DC204491586FFEF12 /* ArialBold.ttf in Resources */ = {isa = PBXBuildFile; fileRef = C95237D24B134592B2479D49 /* ArialBold.ttf */; };
+		1ADB18BC151F4AF8991DD4D0 /* ArialRegular.ttf in Resources */ = {isa = PBXBuildFile; fileRef = 35C9FBEA288248F2887F01CD /* ArialRegular.ttf */; };
+		446BE73C559E4CDABC7932C0 /* Entypo.ttf in Resources */ = {isa = PBXBuildFile; fileRef = ECFABADC09AA400D98F2A255 /* Entypo.ttf */; };
+		D856F779457C4CC1BC7903BD /* EvilIcons.ttf in Resources */ = {isa = PBXBuildFile; fileRef = 172CC098838C4FAF96E65918 /* EvilIcons.ttf */; };
+		157BCD464D644A02A772A936 /* Feather.ttf in Resources */ = {isa = PBXBuildFile; fileRef = D5B13B475911432A9946B305 /* Feather.ttf */; };
+		5E77B4BB4444446E95C1F78E /* FontAwesome.ttf in Resources */ = {isa = PBXBuildFile; fileRef = A950BB5C431F4E939DEAB23F /* FontAwesome.ttf */; };
+		F13D5CE7E3E0480A90DE25BC /* FontAwesome5_Brands.ttf in Resources */ = {isa = PBXBuildFile; fileRef = BAD0475842A54912B85C5109 /* FontAwesome5_Brands.ttf */; };
+		420A2803B92F4333B9E6F179 /* FontAwesome5_Regular.ttf in Resources */ = {isa = PBXBuildFile; fileRef = 66DD85EC5B9748A988EBC699 /* FontAwesome5_Regular.ttf */; };
+		9D2E63F8E468430F80C47007 /* FontAwesome5_Solid.ttf in Resources */ = {isa = PBXBuildFile; fileRef = 5F741935DC8C4C79B978E2EB /* FontAwesome5_Solid.ttf */; };
+		70C24482720D4EA09DBD9F39 /* Fontisto.ttf in Resources */ = {isa = PBXBuildFile; fileRef = BC12BB9B231A42DCA53A9765 /* Fontisto.ttf */; };
+		9428DFA130F44B64AF81C383 /* Foundation.ttf in Resources */ = {isa = PBXBuildFile; fileRef = 3972CCF4757A42489F34D53C /* Foundation.ttf */; };
+		008CB0F64E4648159A4304DB /* Ionicons.ttf in Resources */ = {isa = PBXBuildFile; fileRef = 6B56620A870A4687B5E45666 /* Ionicons.ttf */; };
+		CA6E63716B7C4394A0B744D2 /* MaterialCommunityIcons.ttf in Resources */ = {isa = PBXBuildFile; fileRef = 7CADDE7B3F63497AA32821FB /* MaterialCommunityIcons.ttf */; };
+		BCEA3E8A1EB643B58CAD03C7 /* MaterialIcons.ttf in Resources */ = {isa = PBXBuildFile; fileRef = 8378C7A2CE4F47C99AE41A56 /* MaterialIcons.ttf */; };
+		B2A59EA5E73E4BC9B3CE6377 /* Octicons.ttf in Resources */ = {isa = PBXBuildFile; fileRef = E328AEB784214598B5C6D2DB /* Octicons.ttf */; };
+		5D75E1F1ABF449C98B335054 /* Poppins-Black.ttf in Resources */ = {isa = PBXBuildFile; fileRef = A0B01893EA8647E8BEF51C81 /* Poppins-Black.ttf */; };
+		26F4B1B35DB54AF2AA76536B /* Poppins-Bold.ttf in Resources */ = {isa = PBXBuildFile; fileRef = 0E6891292ADA4DF782CDD8A4 /* Poppins-Bold.ttf */; };
+		5D1728C85EDC4128931A8822 /* Poppins-ExtraBold.ttf in Resources */ = {isa = PBXBuildFile; fileRef = 9382A77E8AFF4C058D7FF6FB /* Poppins-ExtraBold.ttf */; };
+		018D5DB2D95944698C5E946F /* Poppins-ExtraLight.ttf in Resources */ = {isa = PBXBuildFile; fileRef = E05C5D9FB806485CBB692EF7 /* Poppins-ExtraLight.ttf */; };
+		45298FDFD40B472B87BBFB85 /* Poppins-Light.ttf in Resources */ = {isa = PBXBuildFile; fileRef = A528E61EA83C4453B0C4AF70 /* Poppins-Light.ttf */; };
+		9936688A79304E5A8449F66E /* Poppins-Medium.ttf in Resources */ = {isa = PBXBuildFile; fileRef = 77DC326A9FB84E7F93609B6F /* Poppins-Medium.ttf */; };
+		953D37E55A60496F91E41563 /* Poppins-Regular.ttf in Resources */ = {isa = PBXBuildFile; fileRef = 00427D0C9238492F938D20DD /* Poppins-Regular.ttf */; };
+		E85844B4298E4429915EC19F /* Poppins-SemiBold.ttf in Resources */ = {isa = PBXBuildFile; fileRef = B5436C2298CD434F86B93CEE /* Poppins-SemiBold.ttf */; };
+		9F0F1737C23B4AC4A55465A7 /* Poppins-Thin.ttf in Resources */ = {isa = PBXBuildFile; fileRef = E72A56E69FF740F48752830D /* Poppins-Thin.ttf */; };
+		77C9C66EE76F4D86B4FEBCAB /* SimpleLineIcons.ttf in Resources */ = {isa = PBXBuildFile; fileRef = F1674F230DA941BB872A34D9 /* SimpleLineIcons.ttf */; };
+		D0CAD826C9A44E878FF73493 /* Zocial.ttf in Resources */ = {isa = PBXBuildFile; fileRef = CC70BD327B3E42A5AE0B2147 /* Zocial.ttf */; };
+		44B04C98F87C48D691A55B72 /* ArialCE.ttf in Resources */ = {isa = PBXBuildFile; fileRef = 6D07087CF2BC4B8AAB8148AE /* ArialCE.ttf */; };
+		38D4BF8362A340F9B2446F21 /* arialceb.ttf in Resources */ = {isa = PBXBuildFile; fileRef = 258C686B46304C59A5198FF8 /* arialceb.ttf */; };
+		39AEE1A91FC9416C9F96EEC0 /* ArialCEBoldItalic.ttf in Resources */ = {isa = PBXBuildFile; fileRef = 7C7E2D225CB14667B2BDE8A2 /* ArialCEBoldItalic.ttf */; };
+		12A8B9BE94EF4BCC87134A7A /* ArialCEItalic.ttf in Resources */ = {isa = PBXBuildFile; fileRef = 5F192F7AA1EE4B238C47148D /* ArialCEItalic.ttf */; };
+		D5B964CE6F894059BB4A8957 /* ArialCEMTBlack.ttf in Resources */ = {isa = PBXBuildFile; fileRef = 59AD33A9EF2046FC830537B1 /* ArialCEMTBlack.ttf */; };
+		27D246791B9C427EBBA98760 /* ArialMdm.ttf in Resources */ = {isa = PBXBuildFile; fileRef = 718071EF0FE548BD99C5C757 /* ArialMdm.ttf */; };
+		29DF925309414B8AA145DF58 /* ArialMdmItl.ttf in Resources */ = {isa = PBXBuildFile; fileRef = 2508151B7B07411BB67E7E6F /* ArialMdmItl.ttf */; };
+		435DED49493E48E4B055A5C4 /* ARIAL.TTF in Resources */ = {isa = PBXBuildFile; fileRef = C339EDCE79924B55A05FF2E0 /* ARIAL.TTF */; };
+		01EB3F5432E240B0B9B81D1A /* ARIALBD 1.TTF in Resources */ = {isa = PBXBuildFile; fileRef = DAB5F9A25F594D85A6E5B755 /* ARIALBD 1.TTF */; };
+		28EEA5B4303C4ACF94497ECB /* ARIALBD.TTF in Resources */ = {isa = PBXBuildFile; fileRef = 565DBC84102C429796FE7A34 /* ARIALBD.TTF */; };
+		D9EB90E70F6147B3B9BC04DF /* ARIALBI 1.TTF in Resources */ = {isa = PBXBuildFile; fileRef = 2D83BF3FCB7F46568994B823 /* ARIALBI 1.TTF */; };
+		6D38264C63CB4B389C040BBF /* ARIALBI.TTF in Resources */ = {isa = PBXBuildFile; fileRef = E8DC32ACFE4C4E0B83CFF6B1 /* ARIALBI.TTF */; };
+		D39333F7087B424C94D3306C /* ARIALBLACKITALIC.TTF in Resources */ = {isa = PBXBuildFile; fileRef = EEF7523FD6CF46E9B679F2D1 /* ARIALBLACKITALIC.TTF */; };
+		7C8094BA47F7417AAB656FFC /* ARIALI 1.TTF in Resources */ = {isa = PBXBuildFile; fileRef = FC7CA49C162847ADA3499111 /* ARIALI 1.TTF */; };
+		F24AB55D54D8434EA2054CB0 /* ARIALI.TTF in Resources */ = {isa = PBXBuildFile; fileRef = F9E0D709E69944BDB8372E5C /* ARIALI.TTF */; };
+		E764934E4E7F4E0196DBBAF4 /* ARIALLGT.TTF in Resources */ = {isa = PBXBuildFile; fileRef = 71C40A46806F405F9410925E /* ARIALLGT.TTF */; };
+		7342297D577A4FEA9095FD5C /* ARIALLGTITL.TTF in Resources */ = {isa = PBXBuildFile; fileRef = E32B1B61FD21453FAE0928BB /* ARIALLGTITL.TTF */; };
+		99D47AC3DE2C4493907276D8 /* ARIALN.TTF in Resources */ = {isa = PBXBuildFile; fileRef = BFE792D038CD4967A3D9EBA1 /* ARIALN.TTF */; };
+		D3ADEADA323C4B81B31CAAC1 /* ARIALNB.TTF in Resources */ = {isa = PBXBuildFile; fileRef = 1B1F03F03DCD41C997B9B76C /* ARIALNB.TTF */; };
+		BA7387FBE15F48DE902F6238 /* ARIALNBI.TTF in Resources */ = {isa = PBXBuildFile; fileRef = 05469164F4B74D5DA8AB2BA2 /* ARIALNBI.TTF */; };
+		26224AD09F644B96A00948FC /* ARIALNI.TTF in Resources */ = {isa = PBXBuildFile; fileRef = 33F949F0AE6F4781953589D6 /* ARIALNI.TTF */; };
+		C13E4DDFCEC3421E92ED398F /* ARIBLK.TTF in Resources */ = {isa = PBXBuildFile; fileRef = 94C720B739BE42A39D9B0AD7 /* ARIBLK.TTF */; };
+		26A43747054B451B82985587 /* Gilroy-Black.ttf in Resources */ = {isa = PBXBuildFile; fileRef = 8D8C457A9DBC48F1A41236EA /* Gilroy-Black.ttf */; };
+		17E4AE75953342EA8D14E154 /* Gilroy-BlackItalic.ttf in Resources */ = {isa = PBXBuildFile; fileRef = 2923880C5961496EA212132C /* Gilroy-BlackItalic.ttf */; };
+		F1C4F74EA9A54C8980466B4A /* Gilroy-Bold.ttf in Resources */ = {isa = PBXBuildFile; fileRef = 710A950D9C134DA3AB9B1FA3 /* Gilroy-Bold.ttf */; };
+		8E116D6E35CA4269BB575D86 /* Gilroy-BoldItalic.ttf in Resources */ = {isa = PBXBuildFile; fileRef = A03F1B204E0646F7A2C2EC38 /* Gilroy-BoldItalic.ttf */; };
+		7AA196A5E88544BD916DD46E /* Gilroy-ExtraBold 800.ttf in Resources */ = {isa = PBXBuildFile; fileRef = AC707CDE0A7F44248EE98B16 /* Gilroy-ExtraBold 800.ttf */; };
+		AE1C079600934438945789A7 /* Gilroy-ExtraBold.ttf in Resources */ = {isa = PBXBuildFile; fileRef = F5890E90C7944D8DA86486D4 /* Gilroy-ExtraBold.ttf */; };
+		6C4053B74FFA4B658CE59B65 /* Gilroy-ExtraBoldItalic.ttf in Resources */ = {isa = PBXBuildFile; fileRef = B37FCAD852BF4267BAC9565B /* Gilroy-ExtraBoldItalic.ttf */; };
+		BA606B98365B46C0B32F6B1D /* Gilroy-Heavy.ttf in Resources */ = {isa = PBXBuildFile; fileRef = FA5412CF8DC54328BDE0A5E3 /* Gilroy-Heavy.ttf */; };
+		163B2989392E47ABAD4E80B6 /* Gilroy-HeavyItalic.ttf in Resources */ = {isa = PBXBuildFile; fileRef = E604F80C083F458AAF1928BF /* Gilroy-HeavyItalic.ttf */; };
+		D9E198B7C4164B0088CD7D44 /* Gilroy-Light 300.ttf in Resources */ = {isa = PBXBuildFile; fileRef = 2F446C051148457B81267F5B /* Gilroy-Light 300.ttf */; };
+		C40AAD08C6964538AC3A895E /* Gilroy-Light.ttf in Resources */ = {isa = PBXBuildFile; fileRef = A6CE3484F9E4432BB4EBDCE4 /* Gilroy-Light.ttf */; };
+		6B05807FBD8D4D2EBC959D11 /* Gilroy-LightItalic.ttf in Resources */ = {isa = PBXBuildFile; fileRef = 2D669B98791747D287574929 /* Gilroy-LightItalic.ttf */; };
+		B11C65BE32E34A0E87FEE348 /* Gilroy-Medium.ttf in Resources */ = {isa = PBXBuildFile; fileRef = 2EA51D0B31314C71B91E6A93 /* Gilroy-Medium.ttf */; };
+		3C3809F321EB45A2A99845AC /* Gilroy-MediumItalic.ttf in Resources */ = {isa = PBXBuildFile; fileRef = CD4052C8C71440DF916DB8DE /* Gilroy-MediumItalic.ttf */; };
+		2F26A5CDD9EB457FA0F1298E /* Gilroy-Regular.ttf in Resources */ = {isa = PBXBuildFile; fileRef = 01A0088D1EC5492FB8F827C9 /* Gilroy-Regular.ttf */; };
+		C1FB536CF8074B7A8B2765CB /* Gilroy-RegularItalic.ttf in Resources */ = {isa = PBXBuildFile; fileRef = 24051C50475B4CA7AF16704C /* Gilroy-RegularItalic.ttf */; };
+		9AA51098833946B9ABFE328E /* Gilroy-SemiBold.ttf in Resources */ = {isa = PBXBuildFile; fileRef = 22C92A61072A4B6D8E23B820 /* Gilroy-SemiBold.ttf */; };
+		4061AA71E9934E2990B26DB7 /* Gilroy-SemiBoldItalic.ttf in Resources */ = {isa = PBXBuildFile; fileRef = 547E3F20270B485C94CF9CD1 /* Gilroy-SemiBoldItalic.ttf */; };
+		D51CA8EA12C4493A84724A20 /* Gilroy-Thin.ttf in Resources */ = {isa = PBXBuildFile; fileRef = DF437674B4C3458097AB2682 /* Gilroy-Thin.ttf */; };
+		D090101CD38C4260816C3923 /* Gilroy-ThinItalic.ttf in Resources */ = {isa = PBXBuildFile; fileRef = AF2C45741459475CA1DC1B77 /* Gilroy-ThinItalic.ttf */; };
+		790CE6EA37004B5183631EF9 /* Gilroy-UltraLight.ttf in Resources */ = {isa = PBXBuildFile; fileRef = 227AD1646F1646F4A827DB92 /* Gilroy-UltraLight.ttf */; };
+		78C2B75CAD7842F6A29CBBBF /* Gilroy-UltraLightItalic.ttf in Resources */ = {isa = PBXBuildFile; fileRef = BD7E3E985DFE4FF485CD3D17 /* Gilroy-UltraLightItalic.ttf */; };
+		A14BFC568E784E03A6D38B1F /* Poppins-BlackItalic.ttf in Resources */ = {isa = PBXBuildFile; fileRef = 42A65C751FF84E179089AC2C /* Poppins-BlackItalic.ttf */; };
+		4C8273F1F9F2497BAEA06893 /* Poppins-BoldItalic.ttf in Resources */ = {isa = PBXBuildFile; fileRef = 5A138A6CCDB84C728EF8F611 /* Poppins-BoldItalic.ttf */; };
+		5A99EE5A06154C6A9EEF7AD8 /* Poppins-ExtraBoldItalic.ttf in Resources */ = {isa = PBXBuildFile; fileRef = E30AD445F02C40E3B05E9A5C /* Poppins-ExtraBoldItalic.ttf */; };
+		158FC6C1637A4B31B6F7E256 /* Poppins-ExtraLightItalic.ttf in Resources */ = {isa = PBXBuildFile; fileRef = E7AE1D0C2EE7479BACA8A29E /* Poppins-ExtraLightItalic.ttf */; };
+		70EDE3B5AD574E0794A5FF18 /* Poppins-Italic.ttf in Resources */ = {isa = PBXBuildFile; fileRef = 92EC57EC43924D6B9EE3F14B /* Poppins-Italic.ttf */; };
+		1FDCA85E2A3C4A979A67BA62 /* Poppins-LightItalic.ttf in Resources */ = {isa = PBXBuildFile; fileRef = C34D1A0CD3AD4309A0E1C256 /* Poppins-LightItalic.ttf */; };
+		3C1370A132584FBD9D8EFD78 /* Poppins-MediumItalic.ttf in Resources */ = {isa = PBXBuildFile; fileRef = 6D430B250BE24217BB057484 /* Poppins-MediumItalic.ttf */; };
+		1AD4180E080E490FBAAE5C6B /* Poppins-SemiBoldItalic.ttf in Resources */ = {isa = PBXBuildFile; fileRef = DFCDC78269624C4880005817 /* Poppins-SemiBoldItalic.ttf */; };
+		4B5BE6215982457695D29F82 /* Poppins-ThinItalic.ttf in Resources */ = {isa = PBXBuildFile; fileRef = 601D7D2DCCBF492084A74DC7 /* Poppins-ThinItalic.ttf */; };
+/* End PBXBuildFile section */
+
+/* Begin PBXContainerItemProxy section */
+		00E356F41AD99517003FC87E /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = 83CBB9F71A601CBA00E9B192 /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = 13B07F861A680F5B00A75B9A;
+			remoteInfo = RecorderVault;
+		};
+/* End PBXContainerItemProxy section */
+
+/* Begin PBXFileReference section */
+		00E356EE1AD99517003FC87E /* RecorderVaultTests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = RecorderVaultTests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
+		00E356F11AD99517003FC87E /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		00E356F21AD99517003FC87E /* RecorderVaultTests.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = RecorderVaultTests.m; sourceTree = "<group>"; };
+		13B07F961A680F5B00A75B9A /* RecorderVault.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = RecorderVault.app; sourceTree = BUILT_PRODUCTS_DIR; };
+		13B07FAF1A68108700A75B9A /* AppDelegate.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = AppDelegate.h; path = RecorderVault/AppDelegate.h; sourceTree = "<group>"; };
+		13B07FB01A68108700A75B9A /* AppDelegate.mm */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.objcpp; name = AppDelegate.mm; path = RecorderVault/AppDelegate.mm; sourceTree = "<group>"; };
+		13B07FB51A68108700A75B9A /* Images.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; name = Images.xcassets; path = RecorderVault/Images.xcassets; sourceTree = "<group>"; };
+		13B07FB61A68108700A75B9A /* Info.plist */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.plist.xml; name = Info.plist; path = RecorderVault/Info.plist; sourceTree = "<group>"; };
+		13B07FB71A68108700A75B9A /* main.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; name = main.m; path = RecorderVault/main.m; sourceTree = "<group>"; };
+		19F6CBCC0A4E27FBF8BF4A61 /* libPods-RecorderVault-RecorderVaultTests.a */ = {isa = PBXFileReference; explicitFileType = archive.ar; includeInIndex = 0; path = "libPods-RecorderVault-RecorderVaultTests.a"; sourceTree = BUILT_PRODUCTS_DIR; };
+		3B4392A12AC88292D35C810B /* Pods-RecorderVault.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-RecorderVault.debug.xcconfig"; path = "Target Support Files/Pods-RecorderVault/Pods-RecorderVault.debug.xcconfig"; sourceTree = "<group>"; };
+		5709B34CF0A7D63546082F79 /* Pods-RecorderVault.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-RecorderVault.release.xcconfig"; path = "Target Support Files/Pods-RecorderVault/Pods-RecorderVault.release.xcconfig"; sourceTree = "<group>"; };
+		5B7EB9410499542E8C5724F5 /* Pods-RecorderVault-RecorderVaultTests.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-RecorderVault-RecorderVaultTests.debug.xcconfig"; path = "Target Support Files/Pods-RecorderVault-RecorderVaultTests/Pods-RecorderVault-RecorderVaultTests.debug.xcconfig"; sourceTree = "<group>"; };
+		5DCACB8F33CDC322A6C60F78 /* libPods-RecorderVault.a */ = {isa = PBXFileReference; explicitFileType = archive.ar; includeInIndex = 0; path = "libPods-RecorderVault.a"; sourceTree = BUILT_PRODUCTS_DIR; };
+		81AB9BB72411601600AC10FF /* LaunchScreen.storyboard */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.storyboard; name = LaunchScreen.storyboard; path = RecorderVault/LaunchScreen.storyboard; sourceTree = "<group>"; };
+		89C6BE57DB24E9ADA2F236DE /* Pods-RecorderVault-RecorderVaultTests.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-RecorderVault-RecorderVaultTests.release.xcconfig"; path = "Target Support Files/Pods-RecorderVault-RecorderVaultTests/Pods-RecorderVault-RecorderVaultTests.release.xcconfig"; sourceTree = "<group>"; };
+		ED297162215061F000B7C4FE /* JavaScriptCore.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = JavaScriptCore.framework; path = System/Library/Frameworks/JavaScriptCore.framework; sourceTree = SDKROOT; };
+		AFAD1F0454184BFB9CBC176A /* AntDesign.ttf */ = {isa = PBXFileReference; name = "AntDesign.ttf"; path = "../assets/fonts/AntDesign.ttf"; sourceTree = "<group>"; fileEncoding = undefined; lastKnownFileType = unknown; explicitFileType = undefined; includeInIndex = 0; };
+		C95237D24B134592B2479D49 /* ArialBold.ttf */ = {isa = PBXFileReference; name = "ArialBold.ttf"; path = "../assets/fonts/ArialBold.ttf"; sourceTree = "<group>"; fileEncoding = undefined; lastKnownFileType = unknown; explicitFileType = undefined; includeInIndex = 0; };
+		35C9FBEA288248F2887F01CD /* ArialRegular.ttf */ = {isa = PBXFileReference; name = "ArialRegular.ttf"; path = "../assets/fonts/ArialRegular.ttf"; sourceTree = "<group>"; fileEncoding = undefined; lastKnownFileType = unknown; explicitFileType = undefined; includeInIndex = 0; };
+		ECFABADC09AA400D98F2A255 /* Entypo.ttf */ = {isa = PBXFileReference; name = "Entypo.ttf"; path = "../assets/fonts/Entypo.ttf"; sourceTree = "<group>"; fileEncoding = undefined; lastKnownFileType = unknown; explicitFileType = undefined; includeInIndex = 0; };
+		172CC098838C4FAF96E65918 /* EvilIcons.ttf */ = {isa = PBXFileReference; name = "EvilIcons.ttf"; path = "../assets/fonts/EvilIcons.ttf"; sourceTree = "<group>"; fileEncoding = undefined; lastKnownFileType = unknown; explicitFileType = undefined; includeInIndex = 0; };
+		D5B13B475911432A9946B305 /* Feather.ttf */ = {isa = PBXFileReference; name = "Feather.ttf"; path = "../assets/fonts/Feather.ttf"; sourceTree = "<group>"; fileEncoding = undefined; lastKnownFileType = unknown; explicitFileType = undefined; includeInIndex = 0; };
+		A950BB5C431F4E939DEAB23F /* FontAwesome.ttf */ = {isa = PBXFileReference; name = "FontAwesome.ttf"; path = "../assets/fonts/FontAwesome.ttf"; sourceTree = "<group>"; fileEncoding = undefined; lastKnownFileType = unknown; explicitFileType = undefined; includeInIndex = 0; };
+		BAD0475842A54912B85C5109 /* FontAwesome5_Brands.ttf */ = {isa = PBXFileReference; name = "FontAwesome5_Brands.ttf"; path = "../assets/fonts/FontAwesome5_Brands.ttf"; sourceTree = "<group>"; fileEncoding = undefined; lastKnownFileType = unknown; explicitFileType = undefined; includeInIndex = 0; };
+		66DD85EC5B9748A988EBC699 /* FontAwesome5_Regular.ttf */ = {isa = PBXFileReference; name = "FontAwesome5_Regular.ttf"; path = "../assets/fonts/FontAwesome5_Regular.ttf"; sourceTree = "<group>"; fileEncoding = undefined; lastKnownFileType = unknown; explicitFileType = undefined; includeInIndex = 0; };
+		5F741935DC8C4C79B978E2EB /* FontAwesome5_Solid.ttf */ = {isa = PBXFileReference; name = "FontAwesome5_Solid.ttf"; path = "../assets/fonts/FontAwesome5_Solid.ttf"; sourceTree = "<group>"; fileEncoding = undefined; lastKnownFileType = unknown; explicitFileType = undefined; includeInIndex = 0; };
+		BC12BB9B231A42DCA53A9765 /* Fontisto.ttf */ = {isa = PBXFileReference; name = "Fontisto.ttf"; path = "../assets/fonts/Fontisto.ttf"; sourceTree = "<group>"; fileEncoding = undefined; lastKnownFileType = unknown; explicitFileType = undefined; includeInIndex = 0; };
+		3972CCF4757A42489F34D53C /* Foundation.ttf */ = {isa = PBXFileReference; name = "Foundation.ttf"; path = "../assets/fonts/Foundation.ttf"; sourceTree = "<group>"; fileEncoding = undefined; lastKnownFileType = unknown; explicitFileType = undefined; includeInIndex = 0; };
+		6B56620A870A4687B5E45666 /* Ionicons.ttf */ = {isa = PBXFileReference; name = "Ionicons.ttf"; path = "../assets/fonts/Ionicons.ttf"; sourceTree = "<group>"; fileEncoding = undefined; lastKnownFileType = unknown; explicitFileType = undefined; includeInIndex = 0; };
+		7CADDE7B3F63497AA32821FB /* MaterialCommunityIcons.ttf */ = {isa = PBXFileReference; name = "MaterialCommunityIcons.ttf"; path = "../assets/fonts/MaterialCommunityIcons.ttf"; sourceTree = "<group>"; fileEncoding = undefined; lastKnownFileType = unknown; explicitFileType = undefined; includeInIndex = 0; };
+		8378C7A2CE4F47C99AE41A56 /* MaterialIcons.ttf */ = {isa = PBXFileReference; name = "MaterialIcons.ttf"; path = "../assets/fonts/MaterialIcons.ttf"; sourceTree = "<group>"; fileEncoding = undefined; lastKnownFileType = unknown; explicitFileType = undefined; includeInIndex = 0; };
+		E328AEB784214598B5C6D2DB /* Octicons.ttf */ = {isa = PBXFileReference; name = "Octicons.ttf"; path = "../assets/fonts/Octicons.ttf"; sourceTree = "<group>"; fileEncoding = undefined; lastKnownFileType = unknown; explicitFileType = undefined; includeInIndex = 0; };
+		A0B01893EA8647E8BEF51C81 /* Poppins-Black.ttf */ = {isa = PBXFileReference; name = "Poppins-Black.ttf"; path = "../assets/fonts/Poppins-Black.ttf"; sourceTree = "<group>"; fileEncoding = undefined; lastKnownFileType = unknown; explicitFileType = undefined; includeInIndex = 0; };
+		0E6891292ADA4DF782CDD8A4 /* Poppins-Bold.ttf */ = {isa = PBXFileReference; name = "Poppins-Bold.ttf"; path = "../assets/fonts/Poppins-Bold.ttf"; sourceTree = "<group>"; fileEncoding = undefined; lastKnownFileType = unknown; explicitFileType = undefined; includeInIndex = 0; };
+		9382A77E8AFF4C058D7FF6FB /* Poppins-ExtraBold.ttf */ = {isa = PBXFileReference; name = "Poppins-ExtraBold.ttf"; path = "../assets/fonts/Poppins-ExtraBold.ttf"; sourceTree = "<group>"; fileEncoding = undefined; lastKnownFileType = unknown; explicitFileType = undefined; includeInIndex = 0; };
+		E05C5D9FB806485CBB692EF7 /* Poppins-ExtraLight.ttf */ = {isa = PBXFileReference; name = "Poppins-ExtraLight.ttf"; path = "../assets/fonts/Poppins-ExtraLight.ttf"; sourceTree = "<group>"; fileEncoding = undefined; lastKnownFileType = unknown; explicitFileType = undefined; includeInIndex = 0; };
+		A528E61EA83C4453B0C4AF70 /* Poppins-Light.ttf */ = {isa = PBXFileReference; name = "Poppins-Light.ttf"; path = "../assets/fonts/Poppins-Light.ttf"; sourceTree = "<group>"; fileEncoding = undefined; lastKnownFileType = unknown; explicitFileType = undefined; includeInIndex = 0; };
+		77DC326A9FB84E7F93609B6F /* Poppins-Medium.ttf */ = {isa = PBXFileReference; name = "Poppins-Medium.ttf"; path = "../assets/fonts/Poppins-Medium.ttf"; sourceTree = "<group>"; fileEncoding = undefined; lastKnownFileType = unknown; explicitFileType = undefined; includeInIndex = 0; };
+		00427D0C9238492F938D20DD /* Poppins-Regular.ttf */ = {isa = PBXFileReference; name = "Poppins-Regular.ttf"; path = "../assets/fonts/Poppins-Regular.ttf"; sourceTree = "<group>"; fileEncoding = undefined; lastKnownFileType = unknown; explicitFileType = undefined; includeInIndex = 0; };
+		B5436C2298CD434F86B93CEE /* Poppins-SemiBold.ttf */ = {isa = PBXFileReference; name = "Poppins-SemiBold.ttf"; path = "../assets/fonts/Poppins-SemiBold.ttf"; sourceTree = "<group>"; fileEncoding = undefined; lastKnownFileType = unknown; explicitFileType = undefined; includeInIndex = 0; };
+		E72A56E69FF740F48752830D /* Poppins-Thin.ttf */ = {isa = PBXFileReference; name = "Poppins-Thin.ttf"; path = "../assets/fonts/Poppins-Thin.ttf"; sourceTree = "<group>"; fileEncoding = undefined; lastKnownFileType = unknown; explicitFileType = undefined; includeInIndex = 0; };
+		F1674F230DA941BB872A34D9 /* SimpleLineIcons.ttf */ = {isa = PBXFileReference; name = "SimpleLineIcons.ttf"; path = "../assets/fonts/SimpleLineIcons.ttf"; sourceTree = "<group>"; fileEncoding = undefined; lastKnownFileType = unknown; explicitFileType = undefined; includeInIndex = 0; };
+		CC70BD327B3E42A5AE0B2147 /* Zocial.ttf */ = {isa = PBXFileReference; name = "Zocial.ttf"; path = "../assets/fonts/Zocial.ttf"; sourceTree = "<group>"; fileEncoding = undefined; lastKnownFileType = unknown; explicitFileType = undefined; includeInIndex = 0; };
+		6D07087CF2BC4B8AAB8148AE /* ArialCE.ttf */ = {isa = PBXFileReference; name = "ArialCE.ttf"; path = "../assets/fonts/ArialCE.ttf"; sourceTree = "<group>"; fileEncoding = undefined; lastKnownFileType = unknown; explicitFileType = undefined; includeInIndex = 0; };
+		258C686B46304C59A5198FF8 /* arialceb.ttf */ = {isa = PBXFileReference; name = "arialceb.ttf"; path = "../assets/fonts/arialceb.ttf"; sourceTree = "<group>"; fileEncoding = undefined; lastKnownFileType = unknown; explicitFileType = undefined; includeInIndex = 0; };
+		7C7E2D225CB14667B2BDE8A2 /* ArialCEBoldItalic.ttf */ = {isa = PBXFileReference; name = "ArialCEBoldItalic.ttf"; path = "../assets/fonts/ArialCEBoldItalic.ttf"; sourceTree = "<group>"; fileEncoding = undefined; lastKnownFileType = unknown; explicitFileType = undefined; includeInIndex = 0; };
+		5F192F7AA1EE4B238C47148D /* ArialCEItalic.ttf */ = {isa = PBXFileReference; name = "ArialCEItalic.ttf"; path = "../assets/fonts/ArialCEItalic.ttf"; sourceTree = "<group>"; fileEncoding = undefined; lastKnownFileType = unknown; explicitFileType = undefined; includeInIndex = 0; };
+		59AD33A9EF2046FC830537B1 /* ArialCEMTBlack.ttf */ = {isa = PBXFileReference; name = "ArialCEMTBlack.ttf"; path = "../assets/fonts/ArialCEMTBlack.ttf"; sourceTree = "<group>"; fileEncoding = undefined; lastKnownFileType = unknown; explicitFileType = undefined; includeInIndex = 0; };
+		718071EF0FE548BD99C5C757 /* ArialMdm.ttf */ = {isa = PBXFileReference; name = "ArialMdm.ttf"; path = "../assets/fonts/ArialMdm.ttf"; sourceTree = "<group>"; fileEncoding = undefined; lastKnownFileType = unknown; explicitFileType = undefined; includeInIndex = 0; };
+		2508151B7B07411BB67E7E6F /* ArialMdmItl.ttf */ = {isa = PBXFileReference; name = "ArialMdmItl.ttf"; path = "../assets/fonts/ArialMdmItl.ttf"; sourceTree = "<group>"; fileEncoding = undefined; lastKnownFileType = unknown; explicitFileType = undefined; includeInIndex = 0; };
+		C339EDCE79924B55A05FF2E0 /* ARIAL.TTF */ = {isa = PBXFileReference; name = "ARIAL.TTF"; path = "../assets/fonts/ARIAL.TTF"; sourceTree = "<group>"; fileEncoding = undefined; lastKnownFileType = unknown; explicitFileType = undefined; includeInIndex = 0; };
+		DAB5F9A25F594D85A6E5B755 /* ARIALBD 1.TTF */ = {isa = PBXFileReference; name = "ARIALBD 1.TTF"; path = "../assets/fonts/ARIALBD 1.TTF"; sourceTree = "<group>"; fileEncoding = undefined; lastKnownFileType = unknown; explicitFileType = undefined; includeInIndex = 0; };
+		565DBC84102C429796FE7A34 /* ARIALBD.TTF */ = {isa = PBXFileReference; name = "ARIALBD.TTF"; path = "../assets/fonts/ARIALBD.TTF"; sourceTree = "<group>"; fileEncoding = undefined; lastKnownFileType = unknown; explicitFileType = undefined; includeInIndex = 0; };
+		2D83BF3FCB7F46568994B823 /* ARIALBI 1.TTF */ = {isa = PBXFileReference; name = "ARIALBI 1.TTF"; path = "../assets/fonts/ARIALBI 1.TTF"; sourceTree = "<group>"; fileEncoding = undefined; lastKnownFileType = unknown; explicitFileType = undefined; includeInIndex = 0; };
+		E8DC32ACFE4C4E0B83CFF6B1 /* ARIALBI.TTF */ = {isa = PBXFileReference; name = "ARIALBI.TTF"; path = "../assets/fonts/ARIALBI.TTF"; sourceTree = "<group>"; fileEncoding = undefined; lastKnownFileType = unknown; explicitFileType = undefined; includeInIndex = 0; };
+		EEF7523FD6CF46E9B679F2D1 /* ARIALBLACKITALIC.TTF */ = {isa = PBXFileReference; name = "ARIALBLACKITALIC.TTF"; path = "../assets/fonts/ARIALBLACKITALIC.TTF"; sourceTree = "<group>"; fileEncoding = undefined; lastKnownFileType = unknown; explicitFileType = undefined; includeInIndex = 0; };
+		FC7CA49C162847ADA3499111 /* ARIALI 1.TTF */ = {isa = PBXFileReference; name = "ARIALI 1.TTF"; path = "../assets/fonts/ARIALI 1.TTF"; sourceTree = "<group>"; fileEncoding = undefined; lastKnownFileType = unknown; explicitFileType = undefined; includeInIndex = 0; };
+		F9E0D709E69944BDB8372E5C /* ARIALI.TTF */ = {isa = PBXFileReference; name = "ARIALI.TTF"; path = "../assets/fonts/ARIALI.TTF"; sourceTree = "<group>"; fileEncoding = undefined; lastKnownFileType = unknown; explicitFileType = undefined; includeInIndex = 0; };
+		71C40A46806F405F9410925E /* ARIALLGT.TTF */ = {isa = PBXFileReference; name = "ARIALLGT.TTF"; path = "../assets/fonts/ARIALLGT.TTF"; sourceTree = "<group>"; fileEncoding = undefined; lastKnownFileType = unknown; explicitFileType = undefined; includeInIndex = 0; };
+		E32B1B61FD21453FAE0928BB /* ARIALLGTITL.TTF */ = {isa = PBXFileReference; name = "ARIALLGTITL.TTF"; path = "../assets/fonts/ARIALLGTITL.TTF"; sourceTree = "<group>"; fileEncoding = undefined; lastKnownFileType = unknown; explicitFileType = undefined; includeInIndex = 0; };
+		BFE792D038CD4967A3D9EBA1 /* ARIALN.TTF */ = {isa = PBXFileReference; name = "ARIALN.TTF"; path = "../assets/fonts/ARIALN.TTF"; sourceTree = "<group>"; fileEncoding = undefined; lastKnownFileType = unknown; explicitFileType = undefined; includeInIndex = 0; };
+		1B1F03F03DCD41C997B9B76C /* ARIALNB.TTF */ = {isa = PBXFileReference; name = "ARIALNB.TTF"; path = "../assets/fonts/ARIALNB.TTF"; sourceTree = "<group>"; fileEncoding = undefined; lastKnownFileType = unknown; explicitFileType = undefined; includeInIndex = 0; };
+		05469164F4B74D5DA8AB2BA2 /* ARIALNBI.TTF */ = {isa = PBXFileReference; name = "ARIALNBI.TTF"; path = "../assets/fonts/ARIALNBI.TTF"; sourceTree = "<group>"; fileEncoding = undefined; lastKnownFileType = unknown; explicitFileType = undefined; includeInIndex = 0; };
+		33F949F0AE6F4781953589D6 /* ARIALNI.TTF */ = {isa = PBXFileReference; name = "ARIALNI.TTF"; path = "../assets/fonts/ARIALNI.TTF"; sourceTree = "<group>"; fileEncoding = undefined; lastKnownFileType = unknown; explicitFileType = undefined; includeInIndex = 0; };
+		94C720B739BE42A39D9B0AD7 /* ARIBLK.TTF */ = {isa = PBXFileReference; name = "ARIBLK.TTF"; path = "../assets/fonts/ARIBLK.TTF"; sourceTree = "<group>"; fileEncoding = undefined; lastKnownFileType = unknown; explicitFileType = undefined; includeInIndex = 0; };
+		8D8C457A9DBC48F1A41236EA /* Gilroy-Black.ttf */ = {isa = PBXFileReference; name = "Gilroy-Black.ttf"; path = "../assets/fonts/Gilroy-Black.ttf"; sourceTree = "<group>"; fileEncoding = undefined; lastKnownFileType = unknown; explicitFileType = undefined; includeInIndex = 0; };
+		2923880C5961496EA212132C /* Gilroy-BlackItalic.ttf */ = {isa = PBXFileReference; name = "Gilroy-BlackItalic.ttf"; path = "../assets/fonts/Gilroy-BlackItalic.ttf"; sourceTree = "<group>"; fileEncoding = undefined; lastKnownFileType = unknown; explicitFileType = undefined; includeInIndex = 0; };
+		710A950D9C134DA3AB9B1FA3 /* Gilroy-Bold.ttf */ = {isa = PBXFileReference; name = "Gilroy-Bold.ttf"; path = "../assets/fonts/Gilroy-Bold.ttf"; sourceTree = "<group>"; fileEncoding = undefined; lastKnownFileType = unknown; explicitFileType = undefined; includeInIndex = 0; };
+		A03F1B204E0646F7A2C2EC38 /* Gilroy-BoldItalic.ttf */ = {isa = PBXFileReference; name = "Gilroy-BoldItalic.ttf"; path = "../assets/fonts/Gilroy-BoldItalic.ttf"; sourceTree = "<group>"; fileEncoding = undefined; lastKnownFileType = unknown; explicitFileType = undefined; includeInIndex = 0; };
+		AC707CDE0A7F44248EE98B16 /* Gilroy-ExtraBold 800.ttf */ = {isa = PBXFileReference; name = "Gilroy-ExtraBold 800.ttf"; path = "../assets/fonts/Gilroy-ExtraBold 800.ttf"; sourceTree = "<group>"; fileEncoding = undefined; lastKnownFileType = unknown; explicitFileType = undefined; includeInIndex = 0; };
+		F5890E90C7944D8DA86486D4 /* Gilroy-ExtraBold.ttf */ = {isa = PBXFileReference; name = "Gilroy-ExtraBold.ttf"; path = "../assets/fonts/Gilroy-ExtraBold.ttf"; sourceTree = "<group>"; fileEncoding = undefined; lastKnownFileType = unknown; explicitFileType = undefined; includeInIndex = 0; };
+		B37FCAD852BF4267BAC9565B /* Gilroy-ExtraBoldItalic.ttf */ = {isa = PBXFileReference; name = "Gilroy-ExtraBoldItalic.ttf"; path = "../assets/fonts/Gilroy-ExtraBoldItalic.ttf"; sourceTree = "<group>"; fileEncoding = undefined; lastKnownFileType = unknown; explicitFileType = undefined; includeInIndex = 0; };
+		FA5412CF8DC54328BDE0A5E3 /* Gilroy-Heavy.ttf */ = {isa = PBXFileReference; name = "Gilroy-Heavy.ttf"; path = "../assets/fonts/Gilroy-Heavy.ttf"; sourceTree = "<group>"; fileEncoding = undefined; lastKnownFileType = unknown; explicitFileType = undefined; includeInIndex = 0; };
+		E604F80C083F458AAF1928BF /* Gilroy-HeavyItalic.ttf */ = {isa = PBXFileReference; name = "Gilroy-HeavyItalic.ttf"; path = "../assets/fonts/Gilroy-HeavyItalic.ttf"; sourceTree = "<group>"; fileEncoding = undefined; lastKnownFileType = unknown; explicitFileType = undefined; includeInIndex = 0; };
+		2F446C051148457B81267F5B /* Gilroy-Light 300.ttf */ = {isa = PBXFileReference; name = "Gilroy-Light 300.ttf"; path = "../assets/fonts/Gilroy-Light 300.ttf"; sourceTree = "<group>"; fileEncoding = undefined; lastKnownFileType = unknown; explicitFileType = undefined; includeInIndex = 0; };
+		A6CE3484F9E4432BB4EBDCE4 /* Gilroy-Light.ttf */ = {isa = PBXFileReference; name = "Gilroy-Light.ttf"; path = "../assets/fonts/Gilroy-Light.ttf"; sourceTree = "<group>"; fileEncoding = undefined; lastKnownFileType = unknown; explicitFileType = undefined; includeInIndex = 0; };
+		2D669B98791747D287574929 /* Gilroy-LightItalic.ttf */ = {isa = PBXFileReference; name = "Gilroy-LightItalic.ttf"; path = "../assets/fonts/Gilroy-LightItalic.ttf"; sourceTree = "<group>"; fileEncoding = undefined; lastKnownFileType = unknown; explicitFileType = undefined; includeInIndex = 0; };
+		2EA51D0B31314C71B91E6A93 /* Gilroy-Medium.ttf */ = {isa = PBXFileReference; name = "Gilroy-Medium.ttf"; path = "../assets/fonts/Gilroy-Medium.ttf"; sourceTree = "<group>"; fileEncoding = undefined; lastKnownFileType = unknown; explicitFileType = undefined; includeInIndex = 0; };
+		CD4052C8C71440DF916DB8DE /* Gilroy-MediumItalic.ttf */ = {isa = PBXFileReference; name = "Gilroy-MediumItalic.ttf"; path = "../assets/fonts/Gilroy-MediumItalic.ttf"; sourceTree = "<group>"; fileEncoding = undefined; lastKnownFileType = unknown; explicitFileType = undefined; includeInIndex = 0; };
+		01A0088D1EC5492FB8F827C9 /* Gilroy-Regular.ttf */ = {isa = PBXFileReference; name = "Gilroy-Regular.ttf"; path = "../assets/fonts/Gilroy-Regular.ttf"; sourceTree = "<group>"; fileEncoding = undefined; lastKnownFileType = unknown; explicitFileType = undefined; includeInIndex = 0; };
+		24051C50475B4CA7AF16704C /* Gilroy-RegularItalic.ttf */ = {isa = PBXFileReference; name = "Gilroy-RegularItalic.ttf"; path = "../assets/fonts/Gilroy-RegularItalic.ttf"; sourceTree = "<group>"; fileEncoding = undefined; lastKnownFileType = unknown; explicitFileType = undefined; includeInIndex = 0; };
+		22C92A61072A4B6D8E23B820 /* Gilroy-SemiBold.ttf */ = {isa = PBXFileReference; name = "Gilroy-SemiBold.ttf"; path = "../assets/fonts/Gilroy-SemiBold.ttf"; sourceTree = "<group>"; fileEncoding = undefined; lastKnownFileType = unknown; explicitFileType = undefined; includeInIndex = 0; };
+		547E3F20270B485C94CF9CD1 /* Gilroy-SemiBoldItalic.ttf */ = {isa = PBXFileReference; name = "Gilroy-SemiBoldItalic.ttf"; path = "../assets/fonts/Gilroy-SemiBoldItalic.ttf"; sourceTree = "<group>"; fileEncoding = undefined; lastKnownFileType = unknown; explicitFileType = undefined; includeInIndex = 0; };
+		DF437674B4C3458097AB2682 /* Gilroy-Thin.ttf */ = {isa = PBXFileReference; name = "Gilroy-Thin.ttf"; path = "../assets/fonts/Gilroy-Thin.ttf"; sourceTree = "<group>"; fileEncoding = undefined; lastKnownFileType = unknown; explicitFileType = undefined; includeInIndex = 0; };
+		AF2C45741459475CA1DC1B77 /* Gilroy-ThinItalic.ttf */ = {isa = PBXFileReference; name = "Gilroy-ThinItalic.ttf"; path = "../assets/fonts/Gilroy-ThinItalic.ttf"; sourceTree = "<group>"; fileEncoding = undefined; lastKnownFileType = unknown; explicitFileType = undefined; includeInIndex = 0; };
+		227AD1646F1646F4A827DB92 /* Gilroy-UltraLight.ttf */ = {isa = PBXFileReference; name = "Gilroy-UltraLight.ttf"; path = "../assets/fonts/Gilroy-UltraLight.ttf"; sourceTree = "<group>"; fileEncoding = undefined; lastKnownFileType = unknown; explicitFileType = undefined; includeInIndex = 0; };
+		BD7E3E985DFE4FF485CD3D17 /* Gilroy-UltraLightItalic.ttf */ = {isa = PBXFileReference; name = "Gilroy-UltraLightItalic.ttf"; path = "../assets/fonts/Gilroy-UltraLightItalic.ttf"; sourceTree = "<group>"; fileEncoding = undefined; lastKnownFileType = unknown; explicitFileType = undefined; includeInIndex = 0; };
+		42A65C751FF84E179089AC2C /* Poppins-BlackItalic.ttf */ = {isa = PBXFileReference; name = "Poppins-BlackItalic.ttf"; path = "../assets/fonts/Poppins-BlackItalic.ttf"; sourceTree = "<group>"; fileEncoding = undefined; lastKnownFileType = unknown; explicitFileType = undefined; includeInIndex = 0; };
+		5A138A6CCDB84C728EF8F611 /* Poppins-BoldItalic.ttf */ = {isa = PBXFileReference; name = "Poppins-BoldItalic.ttf"; path = "../assets/fonts/Poppins-BoldItalic.ttf"; sourceTree = "<group>"; fileEncoding = undefined; lastKnownFileType = unknown; explicitFileType = undefined; includeInIndex = 0; };
+		E30AD445F02C40E3B05E9A5C /* Poppins-ExtraBoldItalic.ttf */ = {isa = PBXFileReference; name = "Poppins-ExtraBoldItalic.ttf"; path = "../assets/fonts/Poppins-ExtraBoldItalic.ttf"; sourceTree = "<group>"; fileEncoding = undefined; lastKnownFileType = unknown; explicitFileType = undefined; includeInIndex = 0; };
+		E7AE1D0C2EE7479BACA8A29E /* Poppins-ExtraLightItalic.ttf */ = {isa = PBXFileReference; name = "Poppins-ExtraLightItalic.ttf"; path = "../assets/fonts/Poppins-ExtraLightItalic.ttf"; sourceTree = "<group>"; fileEncoding = undefined; lastKnownFileType = unknown; explicitFileType = undefined; includeInIndex = 0; };
+		92EC57EC43924D6B9EE3F14B /* Poppins-Italic.ttf */ = {isa = PBXFileReference; name = "Poppins-Italic.ttf"; path = "../assets/fonts/Poppins-Italic.ttf"; sourceTree = "<group>"; fileEncoding = undefined; lastKnownFileType = unknown; explicitFileType = undefined; includeInIndex = 0; };
+		C34D1A0CD3AD4309A0E1C256 /* Poppins-LightItalic.ttf */ = {isa = PBXFileReference; name = "Poppins-LightItalic.ttf"; path = "../assets/fonts/Poppins-LightItalic.ttf"; sourceTree = "<group>"; fileEncoding = undefined; lastKnownFileType = unknown; explicitFileType = undefined; includeInIndex = 0; };
+		6D430B250BE24217BB057484 /* Poppins-MediumItalic.ttf */ = {isa = PBXFileReference; name = "Poppins-MediumItalic.ttf"; path = "../assets/fonts/Poppins-MediumItalic.ttf"; sourceTree = "<group>"; fileEncoding = undefined; lastKnownFileType = unknown; explicitFileType = undefined; includeInIndex = 0; };
+		DFCDC78269624C4880005817 /* Poppins-SemiBoldItalic.ttf */ = {isa = PBXFileReference; name = "Poppins-SemiBoldItalic.ttf"; path = "../assets/fonts/Poppins-SemiBoldItalic.ttf"; sourceTree = "<group>"; fileEncoding = undefined; lastKnownFileType = unknown; explicitFileType = undefined; includeInIndex = 0; };
+		601D7D2DCCBF492084A74DC7 /* Poppins-ThinItalic.ttf */ = {isa = PBXFileReference; name = "Poppins-ThinItalic.ttf"; path = "../assets/fonts/Poppins-ThinItalic.ttf"; sourceTree = "<group>"; fileEncoding = undefined; lastKnownFileType = unknown; explicitFileType = undefined; includeInIndex = 0; };
+/* End PBXFileReference section */
+
+/* Begin PBXFrameworksBuildPhase section */
+		00E356EB1AD99517003FC87E /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				7699B88040F8A987B510C191 /* libPods-RecorderVault-RecorderVaultTests.a in Frameworks */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		13B07F8C1A680F5B00A75B9A /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				0C80B921A6F3F58F76C31292 /* libPods-RecorderVault.a in Frameworks */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXFrameworksBuildPhase section */
+
+/* Begin PBXGroup section */
+		00E356EF1AD99517003FC87E /* RecorderVaultTests */ = {
+			isa = PBXGroup;
+			children = (
+				00E356F21AD99517003FC87E /* RecorderVaultTests.m */,
+				00E356F01AD99517003FC87E /* Supporting Files */,
+			);
+			path = RecorderVaultTests;
+			sourceTree = "<group>";
+		};
+		00E356F01AD99517003FC87E /* Supporting Files */ = {
+			isa = PBXGroup;
+			children = (
+				00E356F11AD99517003FC87E /* Info.plist */,
+			);
+			name = "Supporting Files";
+			sourceTree = "<group>";
+		};
+		13B07FAE1A68108700A75B9A /* RecorderVault */ = {
+			isa = PBXGroup;
+			children = (
+				13B07FAF1A68108700A75B9A /* AppDelegate.h */,
+				13B07FB01A68108700A75B9A /* AppDelegate.mm */,
+				13B07FB51A68108700A75B9A /* Images.xcassets */,
+				13B07FB61A68108700A75B9A /* Info.plist */,
+				81AB9BB72411601600AC10FF /* LaunchScreen.storyboard */,
+				13B07FB71A68108700A75B9A /* main.m */,
+			);
+			name = RecorderVault;
+			sourceTree = "<group>";
+		};
+		2D16E6871FA4F8E400B85C8A /* Frameworks */ = {
+			isa = PBXGroup;
+			children = (
+				ED297162215061F000B7C4FE /* JavaScriptCore.framework */,
+				5DCACB8F33CDC322A6C60F78 /* libPods-RecorderVault.a */,
+				19F6CBCC0A4E27FBF8BF4A61 /* libPods-RecorderVault-RecorderVaultTests.a */,
+			);
+			name = Frameworks;
+			sourceTree = "<group>";
+		};
+		832341AE1AAA6A7D00B99B32 /* Libraries */ = {
+			isa = PBXGroup;
+			children = (
+			);
+			name = Libraries;
+			sourceTree = "<group>";
+		};
+		83CBB9F61A601CBA00E9B192 = {
+			isa = PBXGroup;
+			children = (
+				13B07FAE1A68108700A75B9A /* RecorderVault */,
+				832341AE1AAA6A7D00B99B32 /* Libraries */,
+				00E356EF1AD99517003FC87E /* RecorderVaultTests */,
+				83CBBA001A601CBA00E9B192 /* Products */,
+				2D16E6871FA4F8E400B85C8A /* Frameworks */,
+				BBD78D7AC51CEA395F1C20DB /* Pods */,
+				443E6ED0B03C4B65BCD44FDD /* Resources */,
+			);
+			indentWidth = 2;
+			sourceTree = "<group>";
+			tabWidth = 2;
+			usesTabs = 0;
+		};
+		83CBBA001A601CBA00E9B192 /* Products */ = {
+			isa = PBXGroup;
+			children = (
+				13B07F961A680F5B00A75B9A /* RecorderVault.app */,
+				00E356EE1AD99517003FC87E /* RecorderVaultTests.xctest */,
+			);
+			name = Products;
+			sourceTree = "<group>";
+		};
+		BBD78D7AC51CEA395F1C20DB /* Pods */ = {
+			isa = PBXGroup;
+			children = (
+				3B4392A12AC88292D35C810B /* Pods-RecorderVault.debug.xcconfig */,
+				5709B34CF0A7D63546082F79 /* Pods-RecorderVault.release.xcconfig */,
+				5B7EB9410499542E8C5724F5 /* Pods-RecorderVault-RecorderVaultTests.debug.xcconfig */,
+				89C6BE57DB24E9ADA2F236DE /* Pods-RecorderVault-RecorderVaultTests.release.xcconfig */,
+			);
+			path = Pods;
+			sourceTree = "<group>";
+		};
+		443E6ED0B03C4B65BCD44FDD /* Resources */ = {
+			isa = "PBXGroup";
+			children = (
+				AFAD1F0454184BFB9CBC176A /* AntDesign.ttf */,
+				C95237D24B134592B2479D49 /* ArialBold.ttf */,
+				35C9FBEA288248F2887F01CD /* ArialRegular.ttf */,
+				ECFABADC09AA400D98F2A255 /* Entypo.ttf */,
+				172CC098838C4FAF96E65918 /* EvilIcons.ttf */,
+				D5B13B475911432A9946B305 /* Feather.ttf */,
+				A950BB5C431F4E939DEAB23F /* FontAwesome.ttf */,
+				BAD0475842A54912B85C5109 /* FontAwesome5_Brands.ttf */,
+				66DD85EC5B9748A988EBC699 /* FontAwesome5_Regular.ttf */,
+				5F741935DC8C4C79B978E2EB /* FontAwesome5_Solid.ttf */,
+				BC12BB9B231A42DCA53A9765 /* Fontisto.ttf */,
+				3972CCF4757A42489F34D53C /* Foundation.ttf */,
+				6B56620A870A4687B5E45666 /* Ionicons.ttf */,
+				7CADDE7B3F63497AA32821FB /* MaterialCommunityIcons.ttf */,
+				8378C7A2CE4F47C99AE41A56 /* MaterialIcons.ttf */,
+				E328AEB784214598B5C6D2DB /* Octicons.ttf */,
+				A0B01893EA8647E8BEF51C81 /* Poppins-Black.ttf */,
+				0E6891292ADA4DF782CDD8A4 /* Poppins-Bold.ttf */,
+				9382A77E8AFF4C058D7FF6FB /* Poppins-ExtraBold.ttf */,
+				E05C5D9FB806485CBB692EF7 /* Poppins-ExtraLight.ttf */,
+				A528E61EA83C4453B0C4AF70 /* Poppins-Light.ttf */,
+				77DC326A9FB84E7F93609B6F /* Poppins-Medium.ttf */,
+				00427D0C9238492F938D20DD /* Poppins-Regular.ttf */,
+				B5436C2298CD434F86B93CEE /* Poppins-SemiBold.ttf */,
+				E72A56E69FF740F48752830D /* Poppins-Thin.ttf */,
+				F1674F230DA941BB872A34D9 /* SimpleLineIcons.ttf */,
+				CC70BD327B3E42A5AE0B2147 /* Zocial.ttf */,
+				6D07087CF2BC4B8AAB8148AE /* ArialCE.ttf */,
+				258C686B46304C59A5198FF8 /* arialceb.ttf */,
+				7C7E2D225CB14667B2BDE8A2 /* ArialCEBoldItalic.ttf */,
+				5F192F7AA1EE4B238C47148D /* ArialCEItalic.ttf */,
+				59AD33A9EF2046FC830537B1 /* ArialCEMTBlack.ttf */,
+				718071EF0FE548BD99C5C757 /* ArialMdm.ttf */,
+				2508151B7B07411BB67E7E6F /* ArialMdmItl.ttf */,
+				C339EDCE79924B55A05FF2E0 /* ARIAL.TTF */,
+				DAB5F9A25F594D85A6E5B755 /* ARIALBD 1.TTF */,
+				565DBC84102C429796FE7A34 /* ARIALBD.TTF */,
+				2D83BF3FCB7F46568994B823 /* ARIALBI 1.TTF */,
+				E8DC32ACFE4C4E0B83CFF6B1 /* ARIALBI.TTF */,
+				EEF7523FD6CF46E9B679F2D1 /* ARIALBLACKITALIC.TTF */,
+				FC7CA49C162847ADA3499111 /* ARIALI 1.TTF */,
+				F9E0D709E69944BDB8372E5C /* ARIALI.TTF */,
+				71C40A46806F405F9410925E /* ARIALLGT.TTF */,
+				E32B1B61FD21453FAE0928BB /* ARIALLGTITL.TTF */,
+				BFE792D038CD4967A3D9EBA1 /* ARIALN.TTF */,
+				1B1F03F03DCD41C997B9B76C /* ARIALNB.TTF */,
+				05469164F4B74D5DA8AB2BA2 /* ARIALNBI.TTF */,
+				33F949F0AE6F4781953589D6 /* ARIALNI.TTF */,
+				94C720B739BE42A39D9B0AD7 /* ARIBLK.TTF */,
+				8D8C457A9DBC48F1A41236EA /* Gilroy-Black.ttf */,
+				2923880C5961496EA212132C /* Gilroy-BlackItalic.ttf */,
+				710A950D9C134DA3AB9B1FA3 /* Gilroy-Bold.ttf */,
+				A03F1B204E0646F7A2C2EC38 /* Gilroy-BoldItalic.ttf */,
+				AC707CDE0A7F44248EE98B16 /* Gilroy-ExtraBold 800.ttf */,
+				F5890E90C7944D8DA86486D4 /* Gilroy-ExtraBold.ttf */,
+				B37FCAD852BF4267BAC9565B /* Gilroy-ExtraBoldItalic.ttf */,
+				FA5412CF8DC54328BDE0A5E3 /* Gilroy-Heavy.ttf */,
+				E604F80C083F458AAF1928BF /* Gilroy-HeavyItalic.ttf */,
+				2F446C051148457B81267F5B /* Gilroy-Light 300.ttf */,
+				A6CE3484F9E4432BB4EBDCE4 /* Gilroy-Light.ttf */,
+				2D669B98791747D287574929 /* Gilroy-LightItalic.ttf */,
+				2EA51D0B31314C71B91E6A93 /* Gilroy-Medium.ttf */,
+				CD4052C8C71440DF916DB8DE /* Gilroy-MediumItalic.ttf */,
+				01A0088D1EC5492FB8F827C9 /* Gilroy-Regular.ttf */,
+				24051C50475B4CA7AF16704C /* Gilroy-RegularItalic.ttf */,
+				22C92A61072A4B6D8E23B820 /* Gilroy-SemiBold.ttf */,
+				547E3F20270B485C94CF9CD1 /* Gilroy-SemiBoldItalic.ttf */,
+				DF437674B4C3458097AB2682 /* Gilroy-Thin.ttf */,
+				AF2C45741459475CA1DC1B77 /* Gilroy-ThinItalic.ttf */,
+				227AD1646F1646F4A827DB92 /* Gilroy-UltraLight.ttf */,
+				BD7E3E985DFE4FF485CD3D17 /* Gilroy-UltraLightItalic.ttf */,
+				42A65C751FF84E179089AC2C /* Poppins-BlackItalic.ttf */,
+				5A138A6CCDB84C728EF8F611 /* Poppins-BoldItalic.ttf */,
+				E30AD445F02C40E3B05E9A5C /* Poppins-ExtraBoldItalic.ttf */,
+				E7AE1D0C2EE7479BACA8A29E /* Poppins-ExtraLightItalic.ttf */,
+				92EC57EC43924D6B9EE3F14B /* Poppins-Italic.ttf */,
+				C34D1A0CD3AD4309A0E1C256 /* Poppins-LightItalic.ttf */,
+				6D430B250BE24217BB057484 /* Poppins-MediumItalic.ttf */,
+				DFCDC78269624C4880005817 /* Poppins-SemiBoldItalic.ttf */,
+				601D7D2DCCBF492084A74DC7 /* Poppins-ThinItalic.ttf */,
+			);
+			name = Resources;
+			sourceTree = "<group>";
+			path = "";
+		};
+/* End PBXGroup section */
+
+/* Begin PBXNativeTarget section */
+		00E356ED1AD99517003FC87E /* RecorderVaultTests */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 00E357021AD99517003FC87E /* Build configuration list for PBXNativeTarget "RecorderVaultTests" */;
+			buildPhases = (
+				A55EABD7B0C7F3A422A6CC61 /* [CP] Check Pods Manifest.lock */,
+				00E356EA1AD99517003FC87E /* Sources */,
+				00E356EB1AD99517003FC87E /* Frameworks */,
+				00E356EC1AD99517003FC87E /* Resources */,
+				C59DA0FBD6956966B86A3779 /* [CP] Embed Pods Frameworks */,
+				F6A41C54EA430FDDC6A6ED99 /* [CP] Copy Pods Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+				00E356F51AD99517003FC87E /* PBXTargetDependency */,
+			);
+			name = RecorderVaultTests;
+			productName = RecorderVaultTests;
+			productReference = 00E356EE1AD99517003FC87E /* RecorderVaultTests.xctest */;
+			productType = "com.apple.product-type.bundle.unit-test";
+		};
+		13B07F861A680F5B00A75B9A /* RecorderVault */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 13B07F931A680F5B00A75B9A /* Build configuration list for PBXNativeTarget "RecorderVault" */;
+			buildPhases = (
+				C38B50BA6285516D6DCD4F65 /* [CP] Check Pods Manifest.lock */,
+				FD10A7F022414F080027D42C /* Start Packager */,
+				13B07F871A680F5B00A75B9A /* Sources */,
+				13B07F8C1A680F5B00A75B9A /* Frameworks */,
+				13B07F8E1A680F5B00A75B9A /* Resources */,
+				00DD1BFF1BD5951E006B06BC /* Bundle React Native code and images */,
+				00EEFC60759A1932668264C0 /* [CP] Embed Pods Frameworks */,
+				E235C05ADACE081382539298 /* [CP] Copy Pods Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+			);
+			name = RecorderVault;
+			productName = RecorderVault;
+			productReference = 13B07F961A680F5B00A75B9A /* RecorderVault.app */;
+			productType = "com.apple.product-type.application";
+		};
+/* End PBXNativeTarget section */
+
+/* Begin PBXProject section */
+		83CBB9F71A601CBA00E9B192 /* Project object */ = {
+			isa = PBXProject;
+			attributes = {
+				LastUpgradeCheck = 1210;
+				TargetAttributes = {
+					00E356ED1AD99517003FC87E = {
+						CreatedOnToolsVersion = 6.2;
+						TestTargetID = 13B07F861A680F5B00A75B9A;
+					};
+					13B07F861A680F5B00A75B9A = {
+						LastSwiftMigration = 1120;
+					};
+				};
+			};
+			buildConfigurationList = 83CBB9FA1A601CBA00E9B192 /* Build configuration list for PBXProject "RecorderVault" */;
+			compatibilityVersion = "Xcode 12.0";
+			developmentRegion = en;
+			hasScannedForEncodings = 0;
+			knownRegions = (
+				en,
+				Base,
+			);
+			mainGroup = 83CBB9F61A601CBA00E9B192;
+			productRefGroup = 83CBBA001A601CBA00E9B192 /* Products */;
+			projectDirPath = "";
+			projectRoot = "";
+			targets = (
+				13B07F861A680F5B00A75B9A /* RecorderVault */,
+				00E356ED1AD99517003FC87E /* RecorderVaultTests */,
+			);
+		};
+/* End PBXProject section */
+
+/* Begin PBXResourcesBuildPhase section */
+		00E356EC1AD99517003FC87E /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		13B07F8E1A680F5B00A75B9A /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				81AB9BB82411601600AC10FF /* LaunchScreen.storyboard in Resources */,
+				13B07FBF1A68108700A75B9A /* Images.xcassets in Resources */,
+				CEF67B29762E429E88FBBE39 /* AntDesign.ttf in Resources */,
+				156A8A3DC204491586FFEF12 /* ArialBold.ttf in Resources */,
+				1ADB18BC151F4AF8991DD4D0 /* ArialRegular.ttf in Resources */,
+				446BE73C559E4CDABC7932C0 /* Entypo.ttf in Resources */,
+				D856F779457C4CC1BC7903BD /* EvilIcons.ttf in Resources */,
+				157BCD464D644A02A772A936 /* Feather.ttf in Resources */,
+				5E77B4BB4444446E95C1F78E /* FontAwesome.ttf in Resources */,
+				F13D5CE7E3E0480A90DE25BC /* FontAwesome5_Brands.ttf in Resources */,
+				420A2803B92F4333B9E6F179 /* FontAwesome5_Regular.ttf in Resources */,
+				9D2E63F8E468430F80C47007 /* FontAwesome5_Solid.ttf in Resources */,
+				70C24482720D4EA09DBD9F39 /* Fontisto.ttf in Resources */,
+				9428DFA130F44B64AF81C383 /* Foundation.ttf in Resources */,
+				008CB0F64E4648159A4304DB /* Ionicons.ttf in Resources */,
+				CA6E63716B7C4394A0B744D2 /* MaterialCommunityIcons.ttf in Resources */,
+				BCEA3E8A1EB643B58CAD03C7 /* MaterialIcons.ttf in Resources */,
+				B2A59EA5E73E4BC9B3CE6377 /* Octicons.ttf in Resources */,
+				5D75E1F1ABF449C98B335054 /* Poppins-Black.ttf in Resources */,
+				26F4B1B35DB54AF2AA76536B /* Poppins-Bold.ttf in Resources */,
+				5D1728C85EDC4128931A8822 /* Poppins-ExtraBold.ttf in Resources */,
+				018D5DB2D95944698C5E946F /* Poppins-ExtraLight.ttf in Resources */,
+				45298FDFD40B472B87BBFB85 /* Poppins-Light.ttf in Resources */,
+				9936688A79304E5A8449F66E /* Poppins-Medium.ttf in Resources */,
+				953D37E55A60496F91E41563 /* Poppins-Regular.ttf in Resources */,
+				E85844B4298E4429915EC19F /* Poppins-SemiBold.ttf in Resources */,
+				9F0F1737C23B4AC4A55465A7 /* Poppins-Thin.ttf in Resources */,
+				77C9C66EE76F4D86B4FEBCAB /* SimpleLineIcons.ttf in Resources */,
+				D0CAD826C9A44E878FF73493 /* Zocial.ttf in Resources */,
+				44B04C98F87C48D691A55B72 /* ArialCE.ttf in Resources */,
+				38D4BF8362A340F9B2446F21 /* arialceb.ttf in Resources */,
+				39AEE1A91FC9416C9F96EEC0 /* ArialCEBoldItalic.ttf in Resources */,
+				12A8B9BE94EF4BCC87134A7A /* ArialCEItalic.ttf in Resources */,
+				D5B964CE6F894059BB4A8957 /* ArialCEMTBlack.ttf in Resources */,
+				27D246791B9C427EBBA98760 /* ArialMdm.ttf in Resources */,
+				29DF925309414B8AA145DF58 /* ArialMdmItl.ttf in Resources */,
+				435DED49493E48E4B055A5C4 /* ARIAL.TTF in Resources */,
+				01EB3F5432E240B0B9B81D1A /* ARIALBD 1.TTF in Resources */,
+				28EEA5B4303C4ACF94497ECB /* ARIALBD.TTF in Resources */,
+				D9EB90E70F6147B3B9BC04DF /* ARIALBI 1.TTF in Resources */,
+				6D38264C63CB4B389C040BBF /* ARIALBI.TTF in Resources */,
+				D39333F7087B424C94D3306C /* ARIALBLACKITALIC.TTF in Resources */,
+				7C8094BA47F7417AAB656FFC /* ARIALI 1.TTF in Resources */,
+				F24AB55D54D8434EA2054CB0 /* ARIALI.TTF in Resources */,
+				E764934E4E7F4E0196DBBAF4 /* ARIALLGT.TTF in Resources */,
+				7342297D577A4FEA9095FD5C /* ARIALLGTITL.TTF in Resources */,
+				99D47AC3DE2C4493907276D8 /* ARIALN.TTF in Resources */,
+				D3ADEADA323C4B81B31CAAC1 /* ARIALNB.TTF in Resources */,
+				BA7387FBE15F48DE902F6238 /* ARIALNBI.TTF in Resources */,
+				26224AD09F644B96A00948FC /* ARIALNI.TTF in Resources */,
+				C13E4DDFCEC3421E92ED398F /* ARIBLK.TTF in Resources */,
+				26A43747054B451B82985587 /* Gilroy-Black.ttf in Resources */,
+				17E4AE75953342EA8D14E154 /* Gilroy-BlackItalic.ttf in Resources */,
+				F1C4F74EA9A54C8980466B4A /* Gilroy-Bold.ttf in Resources */,
+				8E116D6E35CA4269BB575D86 /* Gilroy-BoldItalic.ttf in Resources */,
+				7AA196A5E88544BD916DD46E /* Gilroy-ExtraBold 800.ttf in Resources */,
+				AE1C079600934438945789A7 /* Gilroy-ExtraBold.ttf in Resources */,
+				6C4053B74FFA4B658CE59B65 /* Gilroy-ExtraBoldItalic.ttf in Resources */,
+				BA606B98365B46C0B32F6B1D /* Gilroy-Heavy.ttf in Resources */,
+				163B2989392E47ABAD4E80B6 /* Gilroy-HeavyItalic.ttf in Resources */,
+				D9E198B7C4164B0088CD7D44 /* Gilroy-Light 300.ttf in Resources */,
+				C40AAD08C6964538AC3A895E /* Gilroy-Light.ttf in Resources */,
+				6B05807FBD8D4D2EBC959D11 /* Gilroy-LightItalic.ttf in Resources */,
+				B11C65BE32E34A0E87FEE348 /* Gilroy-Medium.ttf in Resources */,
+				3C3809F321EB45A2A99845AC /* Gilroy-MediumItalic.ttf in Resources */,
+				2F26A5CDD9EB457FA0F1298E /* Gilroy-Regular.ttf in Resources */,
+				C1FB536CF8074B7A8B2765CB /* Gilroy-RegularItalic.ttf in Resources */,
+				9AA51098833946B9ABFE328E /* Gilroy-SemiBold.ttf in Resources */,
+				4061AA71E9934E2990B26DB7 /* Gilroy-SemiBoldItalic.ttf in Resources */,
+				D51CA8EA12C4493A84724A20 /* Gilroy-Thin.ttf in Resources */,
+				D090101CD38C4260816C3923 /* Gilroy-ThinItalic.ttf in Resources */,
+				790CE6EA37004B5183631EF9 /* Gilroy-UltraLight.ttf in Resources */,
+				78C2B75CAD7842F6A29CBBBF /* Gilroy-UltraLightItalic.ttf in Resources */,
+				A14BFC568E784E03A6D38B1F /* Poppins-BlackItalic.ttf in Resources */,
+				4C8273F1F9F2497BAEA06893 /* Poppins-BoldItalic.ttf in Resources */,
+				5A99EE5A06154C6A9EEF7AD8 /* Poppins-ExtraBoldItalic.ttf in Resources */,
+				158FC6C1637A4B31B6F7E256 /* Poppins-ExtraLightItalic.ttf in Resources */,
+				70EDE3B5AD574E0794A5FF18 /* Poppins-Italic.ttf in Resources */,
+				1FDCA85E2A3C4A979A67BA62 /* Poppins-LightItalic.ttf in Resources */,
+				3C1370A132584FBD9D8EFD78 /* Poppins-MediumItalic.ttf in Resources */,
+				1AD4180E080E490FBAAE5C6B /* Poppins-SemiBoldItalic.ttf in Resources */,
+				4B5BE6215982457695D29F82 /* Poppins-ThinItalic.ttf in Resources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXResourcesBuildPhase section */
+
+/* Begin PBXShellScriptBuildPhase section */
+		00DD1BFF1BD5951E006B06BC /* Bundle React Native code and images */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+			);
+			name = "Bundle React Native code and images";
+			outputPaths = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "set -e\n\nexport NODE_BINARY=node\n../node_modules/react-native/scripts/react-native-xcode.sh\n";
+		};
+		00EEFC60759A1932668264C0 /* [CP] Embed Pods Frameworks */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputFileListPaths = (
+				"${PODS_ROOT}/Target Support Files/Pods-RecorderVault/Pods-RecorderVault-frameworks-${CONFIGURATION}-input-files.xcfilelist",
+			);
+			name = "[CP] Embed Pods Frameworks";
+			outputFileListPaths = (
+				"${PODS_ROOT}/Target Support Files/Pods-RecorderVault/Pods-RecorderVault-frameworks-${CONFIGURATION}-output-files.xcfilelist",
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "\"${PODS_ROOT}/Target Support Files/Pods-RecorderVault/Pods-RecorderVault-frameworks.sh\"\n";
+			showEnvVarsInLog = 0;
+		};
+		A55EABD7B0C7F3A422A6CC61 /* [CP] Check Pods Manifest.lock */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputFileListPaths = (
+			);
+			inputPaths = (
+				"${PODS_PODFILE_DIR_PATH}/Podfile.lock",
+				"${PODS_ROOT}/Manifest.lock",
+			);
+			name = "[CP] Check Pods Manifest.lock";
+			outputFileListPaths = (
+			);
+			outputPaths = (
+				"$(DERIVED_FILE_DIR)/Pods-RecorderVault-RecorderVaultTests-checkManifestLockResult.txt",
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "diff \"${PODS_PODFILE_DIR_PATH}/Podfile.lock\" \"${PODS_ROOT}/Manifest.lock\" > /dev/null\nif [ $? != 0 ] ; then\n    # print error to STDERR\n    echo \"error: The sandbox is not in sync with the Podfile.lock. Run 'pod install' or update your CocoaPods installation.\" >&2\n    exit 1\nfi\n# This output is used by Xcode 'outputs' to avoid re-running this script phase.\necho \"SUCCESS\" > \"${SCRIPT_OUTPUT_FILE_0}\"\n";
+			showEnvVarsInLog = 0;
+		};
+		C38B50BA6285516D6DCD4F65 /* [CP] Check Pods Manifest.lock */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputFileListPaths = (
+			);
+			inputPaths = (
+				"${PODS_PODFILE_DIR_PATH}/Podfile.lock",
+				"${PODS_ROOT}/Manifest.lock",
+			);
+			name = "[CP] Check Pods Manifest.lock";
+			outputFileListPaths = (
+			);
+			outputPaths = (
+				"$(DERIVED_FILE_DIR)/Pods-RecorderVault-checkManifestLockResult.txt",
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "diff \"${PODS_PODFILE_DIR_PATH}/Podfile.lock\" \"${PODS_ROOT}/Manifest.lock\" > /dev/null\nif [ $? != 0 ] ; then\n    # print error to STDERR\n    echo \"error: The sandbox is not in sync with the Podfile.lock. Run 'pod install' or update your CocoaPods installation.\" >&2\n    exit 1\nfi\n# This output is used by Xcode 'outputs' to avoid re-running this script phase.\necho \"SUCCESS\" > \"${SCRIPT_OUTPUT_FILE_0}\"\n";
+			showEnvVarsInLog = 0;
+		};
+		C59DA0FBD6956966B86A3779 /* [CP] Embed Pods Frameworks */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputFileListPaths = (
+				"${PODS_ROOT}/Target Support Files/Pods-RecorderVault-RecorderVaultTests/Pods-RecorderVault-RecorderVaultTests-frameworks-${CONFIGURATION}-input-files.xcfilelist",
+			);
+			name = "[CP] Embed Pods Frameworks";
+			outputFileListPaths = (
+				"${PODS_ROOT}/Target Support Files/Pods-RecorderVault-RecorderVaultTests/Pods-RecorderVault-RecorderVaultTests-frameworks-${CONFIGURATION}-output-files.xcfilelist",
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "\"${PODS_ROOT}/Target Support Files/Pods-RecorderVault-RecorderVaultTests/Pods-RecorderVault-RecorderVaultTests-frameworks.sh\"\n";
+			showEnvVarsInLog = 0;
+		};
+		E235C05ADACE081382539298 /* [CP] Copy Pods Resources */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputFileListPaths = (
+				"${PODS_ROOT}/Target Support Files/Pods-RecorderVault/Pods-RecorderVault-resources-${CONFIGURATION}-input-files.xcfilelist",
+			);
+			name = "[CP] Copy Pods Resources";
+			outputFileListPaths = (
+				"${PODS_ROOT}/Target Support Files/Pods-RecorderVault/Pods-RecorderVault-resources-${CONFIGURATION}-output-files.xcfilelist",
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "\"${PODS_ROOT}/Target Support Files/Pods-RecorderVault/Pods-RecorderVault-resources.sh\"\n";
+			showEnvVarsInLog = 0;
+		};
+		F6A41C54EA430FDDC6A6ED99 /* [CP] Copy Pods Resources */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputFileListPaths = (
+				"${PODS_ROOT}/Target Support Files/Pods-RecorderVault-RecorderVaultTests/Pods-RecorderVault-RecorderVaultTests-resources-${CONFIGURATION}-input-files.xcfilelist",
+			);
+			name = "[CP] Copy Pods Resources";
+			outputFileListPaths = (
+				"${PODS_ROOT}/Target Support Files/Pods-RecorderVault-RecorderVaultTests/Pods-RecorderVault-RecorderVaultTests-resources-${CONFIGURATION}-output-files.xcfilelist",
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "\"${PODS_ROOT}/Target Support Files/Pods-RecorderVault-RecorderVaultTests/Pods-RecorderVault-RecorderVaultTests-resources.sh\"\n";
+			showEnvVarsInLog = 0;
+		};
+		FD10A7F022414F080027D42C /* Start Packager */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputFileListPaths = (
+			);
+			inputPaths = (
+			);
+			name = "Start Packager";
+			outputFileListPaths = (
+			);
+			outputPaths = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "export RCT_METRO_PORT=\"${RCT_METRO_PORT:=8081}\"\necho \"export RCT_METRO_PORT=${RCT_METRO_PORT}\" > \"${SRCROOT}/../node_modules/react-native/scripts/.packager.env\"\nif [ -z \"${RCT_NO_LAUNCH_PACKAGER+xxx}\" ] ; then\n  if nc -w 5 -z localhost ${RCT_METRO_PORT} ; then\n    if ! curl -s \"http://localhost:${RCT_METRO_PORT}/status\" | grep -q \"packager-status:running\" ; then\n      echo \"Port ${RCT_METRO_PORT} already in use, packager is either not running or not running correctly\"\n      exit 2\n    fi\n  else\n    open \"$SRCROOT/../node_modules/react-native/scripts/launchPackager.command\" || echo \"Can't start packager automatically\"\n  fi\nfi\n";
+			showEnvVarsInLog = 0;
+		};
+/* End PBXShellScriptBuildPhase section */
+
+/* Begin PBXSourcesBuildPhase section */
+		00E356EA1AD99517003FC87E /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				00E356F31AD99517003FC87E /* RecorderVaultTests.m in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		13B07F871A680F5B00A75B9A /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				13B07FBC1A68108700A75B9A /* AppDelegate.mm in Sources */,
+				13B07FC11A68108700A75B9A /* main.m in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXSourcesBuildPhase section */
+
+/* Begin PBXTargetDependency section */
+		00E356F51AD99517003FC87E /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			target = 13B07F861A680F5B00A75B9A /* RecorderVault */;
+			targetProxy = 00E356F41AD99517003FC87E /* PBXContainerItemProxy */;
+		};
+/* End PBXTargetDependency section */
+
+/* Begin XCBuildConfiguration section */
+		00E356F61AD99517003FC87E /* Debug */ = {
+			isa = XCBuildConfiguration;
+			baseConfigurationReference = 5B7EB9410499542E8C5724F5 /* Pods-RecorderVault-RecorderVaultTests.debug.xcconfig */;
+			buildSettings = {
+				BUNDLE_LOADER = "$(TEST_HOST)";
+				GCC_PREPROCESSOR_DEFINITIONS = (
+					"DEBUG=1",
+					"$(inherited)",
+				);
+				INFOPLIST_FILE = RecorderVaultTests/Info.plist;
+				IPHONEOS_DEPLOYMENT_TARGET = 11.0;
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+					"@loader_path/Frameworks",
+				);
+				OTHER_LDFLAGS = (
+					"-ObjC",
+					"-lc++",
+					"$(inherited)",
+				);
+				PRODUCT_BUNDLE_IDENTIFIER = "org.reactjs.native.example.$(PRODUCT_NAME:rfc1034identifier)";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				TEST_HOST = "$(BUILT_PRODUCTS_DIR)/RecorderVault.app/RecorderVault";
+			};
+			name = Debug;
+		};
+		00E356F71AD99517003FC87E /* Release */ = {
+			isa = XCBuildConfiguration;
+			baseConfigurationReference = 89C6BE57DB24E9ADA2F236DE /* Pods-RecorderVault-RecorderVaultTests.release.xcconfig */;
+			buildSettings = {
+				BUNDLE_LOADER = "$(TEST_HOST)";
+				COPY_PHASE_STRIP = NO;
+				INFOPLIST_FILE = RecorderVaultTests/Info.plist;
+				IPHONEOS_DEPLOYMENT_TARGET = 11.0;
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+					"@loader_path/Frameworks",
+				);
+				OTHER_LDFLAGS = (
+					"-ObjC",
+					"-lc++",
+					"$(inherited)",
+				);
+				PRODUCT_BUNDLE_IDENTIFIER = "org.reactjs.native.example.$(PRODUCT_NAME:rfc1034identifier)";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				TEST_HOST = "$(BUILT_PRODUCTS_DIR)/RecorderVault.app/RecorderVault";
+			};
+			name = Release;
+		};
+		13B07F941A680F5B00A75B9A /* Debug */ = {
+			isa = XCBuildConfiguration;
+			baseConfigurationReference = 3B4392A12AC88292D35C810B /* Pods-RecorderVault.debug.xcconfig */;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				CLANG_ENABLE_MODULES = YES;
+				CURRENT_PROJECT_VERSION = 1;
+				ENABLE_BITCODE = NO;
+				INFOPLIST_FILE = RecorderVault/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+				);
+				OTHER_LDFLAGS = (
+					"$(inherited)",
+					"-ObjC",
+					"-lc++",
+				);
+				PRODUCT_BUNDLE_IDENTIFIER = "org.reactjs.native.example.$(PRODUCT_NAME:rfc1034identifier)";
+				PRODUCT_NAME = RecorderVault;
+				SWIFT_OPTIMIZATION_LEVEL = "-Onone";
+				SWIFT_VERSION = 5.0;
+				VERSIONING_SYSTEM = "apple-generic";
+			};
+			name = Debug;
+		};
+		13B07F951A680F5B00A75B9A /* Release */ = {
+			isa = XCBuildConfiguration;
+			baseConfigurationReference = 5709B34CF0A7D63546082F79 /* Pods-RecorderVault.release.xcconfig */;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				CLANG_ENABLE_MODULES = YES;
+				CURRENT_PROJECT_VERSION = 1;
+				INFOPLIST_FILE = RecorderVault/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+				);
+				OTHER_LDFLAGS = (
+					"$(inherited)",
+					"-ObjC",
+					"-lc++",
+				);
+				PRODUCT_BUNDLE_IDENTIFIER = "org.reactjs.native.example.$(PRODUCT_NAME:rfc1034identifier)";
+				PRODUCT_NAME = RecorderVault;
+				SWIFT_VERSION = 5.0;
+				VERSIONING_SYSTEM = "apple-generic";
+			};
+			name = Release;
+		};
+		83CBBA201A601CBA00E9B192 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_ANALYZER_LOCALIZABILITY_NONLOCALIZED = YES;
+				CLANG_CXX_LANGUAGE_STANDARD = "c++17";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_WARN_BLOCK_CAPTURE_AUTORELEASING = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_COMMA = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DEPRECATED_OBJC_IMPLEMENTATIONS = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INFINITE_RECURSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_NON_LITERAL_NULL_CONVERSION = YES;
+				CLANG_WARN_OBJC_IMPLICIT_RETAIN_SELF = YES;
+				CLANG_WARN_OBJC_LITERAL_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_QUOTED_INCLUDE_IN_FRAMEWORK_HEADER = YES;
+				CLANG_WARN_RANGE_LOOP_ANALYSIS = YES;
+				CLANG_WARN_STRICT_PROTOTYPES = YES;
+				CLANG_WARN_SUSPICIOUS_MOVE = YES;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer";
+				COPY_PHASE_STRIP = NO;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				ENABLE_TESTABILITY = YES;
+				"EXCLUDED_ARCHS[sdk=iphonesimulator*]" = "";
+				GCC_C_LANGUAGE_STANDARD = gnu99;
+				GCC_DYNAMIC_NO_PIC = NO;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_OPTIMIZATION_LEVEL = 0;
+				GCC_PREPROCESSOR_DEFINITIONS = (
+					"DEBUG=1",
+					"$(inherited)",
+				);
+				GCC_SYMBOLS_PRIVATE_EXTERN = NO;
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 11.0;
+				LD_RUNPATH_SEARCH_PATHS = (
+					/usr/lib/swift,
+					"$(inherited)",
+				);
+				LIBRARY_SEARCH_PATHS = (
+					"\"$(SDKROOT)/usr/lib/swift\"",
+					"\"$(TOOLCHAIN_DIR)/usr/lib/swift/$(PLATFORM_NAME)\"",
+					"\"$(inherited)\"",
+				);
+				MTL_ENABLE_DEBUG_INFO = YES;
+				ONLY_ACTIVE_ARCH = YES;
+				OTHER_CPLUSPLUSFLAGS = (
+					"$(OTHER_CFLAGS)",
+					"-DFOLLY_NO_CONFIG",
+					"-DFOLLY_MOBILE=1",
+					"-DFOLLY_USE_LIBCPP=1",
+				);
+				SDKROOT = iphoneos;
+			};
+			name = Debug;
+		};
+		83CBBA211A601CBA00E9B192 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_ANALYZER_LOCALIZABILITY_NONLOCALIZED = YES;
+				CLANG_CXX_LANGUAGE_STANDARD = "c++17";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_WARN_BLOCK_CAPTURE_AUTORELEASING = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_COMMA = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DEPRECATED_OBJC_IMPLEMENTATIONS = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INFINITE_RECURSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_NON_LITERAL_NULL_CONVERSION = YES;
+				CLANG_WARN_OBJC_IMPLICIT_RETAIN_SELF = YES;
+				CLANG_WARN_OBJC_LITERAL_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_QUOTED_INCLUDE_IN_FRAMEWORK_HEADER = YES;
+				CLANG_WARN_RANGE_LOOP_ANALYSIS = YES;
+				CLANG_WARN_STRICT_PROTOTYPES = YES;
+				CLANG_WARN_SUSPICIOUS_MOVE = YES;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer";
+				COPY_PHASE_STRIP = YES;
+				ENABLE_NS_ASSERTIONS = NO;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				"EXCLUDED_ARCHS[sdk=iphonesimulator*]" = "";
+				GCC_C_LANGUAGE_STANDARD = gnu99;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 11.0;
+				LD_RUNPATH_SEARCH_PATHS = (
+					/usr/lib/swift,
+					"$(inherited)",
+				);
+				LIBRARY_SEARCH_PATHS = (
+					"\"$(SDKROOT)/usr/lib/swift\"",
+					"\"$(TOOLCHAIN_DIR)/usr/lib/swift/$(PLATFORM_NAME)\"",
+					"\"$(inherited)\"",
+				);
+				MTL_ENABLE_DEBUG_INFO = NO;
+				OTHER_CPLUSPLUSFLAGS = (
+					"$(OTHER_CFLAGS)",
+					"-DFOLLY_NO_CONFIG",
+					"-DFOLLY_MOBILE=1",
+					"-DFOLLY_USE_LIBCPP=1",
+				);
+				SDKROOT = iphoneos;
+				VALIDATE_PRODUCT = YES;
+			};
+			name = Release;
+		};
+/* End XCBuildConfiguration section */
+
+/* Begin XCConfigurationList section */
+		00E357021AD99517003FC87E /* Build configuration list for PBXNativeTarget "RecorderVaultTests" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				00E356F61AD99517003FC87E /* Debug */,
+				00E356F71AD99517003FC87E /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		13B07F931A680F5B00A75B9A /* Build configuration list for PBXNativeTarget "RecorderVault" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				13B07F941A680F5B00A75B9A /* Debug */,
+				13B07F951A680F5B00A75B9A /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		83CBB9FA1A601CBA00E9B192 /* Build configuration list for PBXProject "RecorderVault" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				83CBBA201A601CBA00E9B192 /* Debug */,
+				83CBBA211A601CBA00E9B192 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+/* End XCConfigurationList section */
+	};
+	rootObject = 83CBB9F71A601CBA00E9B192 /* Project object */;
+}
