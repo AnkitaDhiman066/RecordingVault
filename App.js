@@ -11,36 +11,34 @@ import ConfirmPhrase from './src/screens/ConfirmPhrase';
 import Recording from './src/screens/Recording';
 import ConfirmRecording from './src/screens/ConfirmRecording';
 import Successful from './src/screens/Successful';
-import NewFile from './src/screens/NewFile';
+// import NewFile from './src/screens/NewFile';
 
 const Stack = createStackNavigator();
 
 const App = () => {
   return (
     <SafeAreaProvider>
-    <NavigationContainer>
-      <Stack.Navigator
-        initialRouteName="Splash"
-        screenOptions={{
-          headerShown: false,
-        }}>
-        <Stack.Screen name="Splash" component={Splash} />
+      <NavigationContainer>
+        <Stack.Navigator
+          initialRouteName="Splash"
+          screenOptions={{
+            headerShown: false,
+          }}>
+          <Stack.Screen name="Splash" component={Splash} />
 
-        <Stack.Screen name="Register" component={Register} />
+          <Stack.Screen name="Register" component={Register} />
 
-        <Stack.Screen name="SetPhrase" component={SetPhrase} />
+          <Stack.Screen name="SetPhrase" component={SetPhrase} />
 
-        <Stack.Screen name="ConfirmPhrase" component={ConfirmPhrase} />
+          <Stack.Screen name="ConfirmPhrase" component={ConfirmPhrase} />
 
-        <Stack.Screen name="Recording" component={Recording} />
+          <Stack.Screen name="Recording" component={Recording} />
 
-        <Stack.Screen name="ConfirmRecording" component={ConfirmRecording} />
+          <Stack.Screen name="ConfirmRecording" component={ConfirmRecording} />
 
-        <Stack.Screen name="Successful" component={Successful} />
-
-        <Stack.Screen name="NewFile" component={NewFile} />
-      </Stack.Navigator>
-    </NavigationContainer>
+          <Stack.Screen name="Successful" component={Successful} />
+        </Stack.Navigator>
+      </NavigationContainer>
     </SafeAreaProvider>
   );
 };
