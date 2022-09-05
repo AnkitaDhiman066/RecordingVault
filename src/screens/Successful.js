@@ -58,7 +58,8 @@ const Successful = ({navigation}) => {
             alignItems: 'center',
             backgroundColor: '#FFFFFF',
             bottom: 70,
-          }}>
+          }}
+          onPress={() => navigation.navigate('Home')}>
           <Text
             style={{
               color: '#25B0B4',

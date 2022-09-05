@@ -12,6 +12,8 @@ import React from 'react';
 import {TextInput} from 'react-native-gesture-handler';
 import LinearGradient from 'react-native-linear-gradient';
 
+const screen = Dimensions.get('screen');
+
 const Register = ({navigation}) => {
   return (
     <View style={styles.mainView}>
@@ -19,11 +21,11 @@ const Register = ({navigation}) => {
         source={require('../../assets/images/BackGround.png')}
         resizeMode="cover"
         style={{
-          height: '100%',
-          width: '100%',
+          height: screen.height,
+          width: screen.width,
           flex: 1,
           justifyContent: 'center',
-          alignItems: 'center',
+          // alignItems: 'center',
         }}>
         {/* <View style={styles.circle}></View> */}
         <Image
@@ -46,7 +48,7 @@ const Register = ({navigation}) => {
               borderRadius: 40,
               justifyContent: 'center',
               alignItems: 'center',
-              marginTop: 28,
+              marginTop: 43,
               marginBottom: 50,
             }}>
             <TouchableOpacity
@@ -62,7 +64,7 @@ const Register = ({navigation}) => {
                 style={{
                   color: '#FFFFFF',
                   fontFamily: 'Poppins-SemiBold',
-                  fontSize: 18,
+                  fontSize: 20,
                 }}>
                 Submit
               </Text>
@@ -79,44 +81,44 @@ export default Register;
 const styles = StyleSheet.create({
   mainView: {
     flex: 1,
-    // height: '100%',
-    // width: '100%',
-    // alignItems: 'center',
-    // justifyContent: 'center',
+    // height: screen.height,
+    // width: screen.width,
+    // justifyContent:'center'
   },
   centerView: {
     backgroundColor: '#F6F7F9',
-    height: 326,
-    width: 365,
-    marginHorizontal: 25,
+    // height: 374,
+    // width: 325,
+    margin: 25,
     borderRadius: 30,
     alignItems: 'center',
-    zIndex: 2,
-    position: 'relative',
+    // zIndex: 2,
+    // position: 'relative',
   },
   textStyle: {
     fontFamily: 'Poppins-Bold',
-    fontSize: 18,
+    fontSize: 20,
     alignSelf: 'center',
-    marginTop: 43,
+    marginTop: 53,
     color: '#4F4F4F',
   },
   textEmail: {
     fontFamily: 'ArialRegular',
-    fontSize: 14,
+    fontSize: 16,
     marginLeft: 43,
     alignSelf: 'flex-start',
-    marginTop: 29,
-    marginBottom: -5,
+    marginTop: 43,
+    marginBottom: -29,
     color: '#4F4F4F',
-    height: 30,
+    height: 35,
     // width: 103,
   },
   textInput: {
     fontFamily: 'Gilroy-Bold',
-    fontSize: 18,
+    fontSize: 20,
     paddingLeft: 21,
     alignSelf: 'center',
+    marginTop: 20,
     backgroundColor: '#009FA30D',
     color: '#4F4F4F',
     borderWidth: 1,
@@ -135,5 +137,8 @@ const styles = StyleSheet.create({
     zIndex: 1,
     top: -12,
     right: -34,
+    borderRadius: 200,
+    backgroundColor: '#FFFFFF',
+    opacity: 0.09,
   },
 });

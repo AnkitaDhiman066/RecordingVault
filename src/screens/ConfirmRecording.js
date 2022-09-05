@@ -83,6 +83,7 @@ const ConfirmRecording = ({navigation}) => {
               {' '}
               Listening...{' '}
             </Text>
+
             <TouchableOpacity
               onPress={() => navigation.navigate('Successful')}
               style={{
@@ -92,12 +93,19 @@ const ConfirmRecording = ({navigation}) => {
                 justifyContent: 'center',
                 alignItems: 'center',
                 backgroundColor: '#FFFFFF',
+                flexDirection: 'row',
               }}>
+              <Image
+                source={require('../../assets/images/stopBtn.png')}
+                style={{height: 41, width: 41, left: -80}}
+              />
+
               <Text
                 style={{
                   color: '#25B0B4',
                   fontFamily: 'Poppins-SemiBold',
                   fontSize: 18,
+                  marginLeft: -41,
                 }}>
                 {' '}
                 Finish{' '}

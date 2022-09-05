@@ -18,8 +18,7 @@ const Recording = ({navigation}) => {
           height: '100%',
           width: '100%',
         }}>
-        <TouchableOpacity
-          onPress={() => navigation.navigate('SetPhrase')}>
+        <TouchableOpacity onPress={() => navigation.navigate('SetPhrase')}>
           <Image
             source={require('../../assets/images/backButton.png')}
             style={{
@@ -90,15 +89,21 @@ const Recording = ({navigation}) => {
                 height: 60,
                 width: 237,
                 borderRadius: 40,
-                justifyContent: 'center',
                 alignItems: 'center',
                 backgroundColor: '#FFFFFF',
+                flexDirection: 'row',
+                justifyContent: 'center',
               }}>
+              <Image
+                source={require('../../assets/images/stopBtn.png')}
+                style={{height: 41, width: 41, left: -80}}
+              />
               <Text
                 style={{
                   color: '#25B0B4',
                   fontFamily: 'Poppins-SemiBold',
                   fontSize: 18,
+                  marginLeft: -41,
                 }}>
                 {' '}
                 Finish{' '}

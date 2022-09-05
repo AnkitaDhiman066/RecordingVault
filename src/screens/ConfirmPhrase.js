@@ -8,7 +8,7 @@ import {
 } from 'react-native';
 import React from 'react';
 
-const SetPhrase = ({navigation}) => {
+const ConfirmPhrase = ({navigation}) => {
   return (
     <View>
       <ImageBackground
@@ -108,6 +108,6 @@ const SetPhrase = ({navigation}) => {
   );
 };
 
-export default SetPhrase;
+export default ConfirmPhrase;
 
 const styles = StyleSheet.create({});

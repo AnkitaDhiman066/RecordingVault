@@ -6,8 +6,7 @@ import {
   ImageBackground,
   TouchableOpacity,
 } from 'react-native';
-import React, {useState, useEffect} from 'react';
-import Pressable from 'react-native/Libraries/Components/Pressable/Pressable';
+import React from 'react';
 
 const SetPhrase = ({navigation}) => {
   return (
@@ -25,8 +24,8 @@ const SetPhrase = ({navigation}) => {
             style={{
               height: 14,
               width: 8,
+              marginVertical: 45,
               marginLeft: 25,
-              marginTop: 55,
             }}
           />
         </TouchableOpacity>
@@ -35,14 +34,9 @@ const SetPhrase = ({navigation}) => {
             justifyContent: 'space-between',
             alignSelf: 'center',
             alignItems: 'center',
-            height: '100%',
-            marginTop: 34,
+            height: '95%',
           }}>
-          <View
-            style={{
-              justifyContent: 'center',
-              alignItems: 'center',
-            }}>
+          <View style={{justifyContent: 'center', alignItems: 'center'}}>
             <Text
               style={{
                 color: '#FFFFFF',
@@ -59,7 +53,6 @@ const SetPhrase = ({navigation}) => {
                 width: 240,
                 fontSize: 12,
                 textAlign: 'center',
-                // marginTop: 9,
               }}>
               Click on start and start recording your access phrase
             </Text>
@@ -81,7 +74,9 @@ const SetPhrase = ({navigation}) => {
               height: 200,
             }}>
             <TouchableOpacity
-              onPress={() => navigation.navigate('Recording')}
+              onPress={() => {
+                navigation.navigate('Recording');
+              }}
               style={{
                 height: 60,
                 width: 237,
