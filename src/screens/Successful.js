@@ -6,13 +6,21 @@ import {
   TouchableOpacity,
   ImageBackground,
   Image,
+  StatusBar,
+  SafeAreaView
 } from 'react-native';
 import React from 'react';
 import Logo from '../../assets/svg/success.svg';
 
 const Successful = ({navigation}) => {
   return (
-    <View style={styles.mainView}>
+    <SafeAreaView style={styles.mainView}>
+       <StatusBar
+        translucent
+        backgroundColor="transparent"
+        barStyle="light-content"
+        // hidden={true}
+      />
       <ImageBackground
         source={require('../../assets/images/BackGround.png')}
         resizeMode="cover"
@@ -70,7 +78,7 @@ const Successful = ({navigation}) => {
           </Text>
         </TouchableOpacity>
       </ImageBackground>
-    </View>
+    </SafeAreaView>
   );
 };
 

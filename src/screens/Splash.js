@@ -16,10 +16,11 @@ const Splash = ({navigation}) => {
   }, []);
   return (
     <SafeAreaView style={styles.container}>
-      <StatusBar translucent 
-      backgroundColor="transparent"
-      barStyle="light-content"
-      hidden={true} 
+      <StatusBar
+        translucent
+        backgroundColor="transparent"
+        barStyle="light-content"
+        // hidden={true}
       />
       <Image
         source={require('../../assets/images/SplashScreenImage.png')}

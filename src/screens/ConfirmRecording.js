@@ -5,12 +5,20 @@ import {
   View,
   ImageBackground,
   TouchableOpacity,
+  StatusBar,
+  SafeAreaView
 } from 'react-native';
 import React from 'react';
 
 const ConfirmRecording = ({navigation}) => {
   return (
-    <View>
+    <SafeAreaView>
+       <StatusBar
+        translucent
+        backgroundColor="transparent"
+        barStyle="light-content"
+        // hidden={true}
+      />
       <ImageBackground
         source={require('../../assets/images/BackGround2.png')}
         resizeMode="cover"
@@ -114,7 +122,7 @@ const ConfirmRecording = ({navigation}) => {
           </View>
         </View>
       </ImageBackground>
-    </View>
+    </SafeAreaView>
   );
 };
 

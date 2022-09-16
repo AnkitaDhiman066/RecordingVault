@@ -7,6 +7,8 @@ import {
   TouchableOpacity,
   ImageBackground,
   Image,
+  StatusBar,
+  SafeAreaView
 } from 'react-native';
 import React from 'react';
 import {TextInput} from 'react-native-gesture-handler';
@@ -16,7 +18,13 @@ const screen = Dimensions.get('screen');
 
 const Register = ({navigation}) => {
   return (
-    <View style={styles.mainView}>
+    <SafeAreaView style={styles.mainView}>
+       <StatusBar
+        translucent
+        backgroundColor="transparent"
+        barStyle="light-content"
+        // hidden={true}
+      />
       <ImageBackground
         source={require('../../assets/images/BackGround.png')}
         resizeMode="cover"
@@ -72,7 +80,7 @@ const Register = ({navigation}) => {
           </LinearGradient>
         </View>
       </ImageBackground>
-    </View>
+    </SafeAreaView>
   );
 };
 

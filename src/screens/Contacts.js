@@ -9,14 +9,77 @@ import {
   Image,
   TouchableOpacity,
 } from 'react-native';
-import React from 'react';
+import React, {useState} from 'react';
+import {TabView, TabBar, SceneMap} from 'react-native-tab-view';
+import ContactComponent from '../components/ContactComponent';
+import PhotoAlbumComponent from '../components/PhotoAlbumComponent';
+import TextComponent from '../components/TextComponent';
+import UploadComponent from '../components/UploadComponent';
+import VideosComponent from '../components/VideosComponent';
+
+const ContactsRoute = navigation => (
+  <ContactComponent navigation={navigation} />
+);
+
+const UploadRoute = navigation => <UploadComponent navigation={navigation} />;
+
+const PhotoRoute = () => <PhotoAlbumComponent />;
+
+const VideoRoute = () => <VideosComponent />;
+
+const TextMsgRoute = () => <TextComponent />;
 
 const screen = Dimensions.get('screen');
 
-const Contacts = () => {
+const Contacts = ({navigation}) => {
+  const renderScene = SceneMap({
+    contacts: () => ContactsRoute(navigation),
+    upload: () => UploadRoute(navigation),
+    photoAlbums: PhotoRoute,
+    videos: VideoRoute,
+    textMsg: TextMsgRoute,
+  });
+  const [index, setIndex] = useState(0);
+
+  const [routes] = useState([
+    {key: 'contacts', title: 'Contacts'},
+    {key: 'upload', title: 'Upload'},
+    {key: 'photoAlbums', title: 'Photo Album'},
+    {key: 'videos', title: 'Videos'},
+    {key: 'textMsg', title: "Text Msg's"},
+  ]);
+
+  const renderTabBar = props => (
+    <TabBar
+      {...props}
+      activeColor={'#009FA3'}
+      inactiveColor={'rgba(0, 0, 0, 0.4)'}
+      indicatorStyle={{backgroundColor: '#009FA3', height: 2}}
+      // scrollEnabled={true}
+      labelStyle={{
+        fontSize: 12,
+        fontFamily: 'Poppins-Bold',
+        // width: 50,
+        // height: 18,
+      }}
+      style={{
+        marginTop: 25,
+        backgroundColor: 'transparent',
+      }}
+      tabStyle={{
+        width: 'auto',
+      }}
+    />
+  );
+
   return (
     <SafeAreaView style={styles.container}>
-      <StatusBar translucent backgroundColor="transparent" barStyle = "dark-content" />
+      <StatusBar
+        translucent
+        backgroundColor="transparent"
+        barStyle="dark-content"
+      />
+
       <ImageBackground
         source={require('../../assets/images/Vector.png')}
         style={styles.circle}
@@ -30,7 +93,7 @@ const Contacts = () => {
         </TouchableOpacity>
         <Text style={{top: 48}}> LOGO HERE </Text>
 
-        <TouchableOpacity>
+        <TouchableOpacity onPress={() => navigation.navigate('Notification')}>
           <Image
             style={styles.image2}
             source={require('../../assets/images/notification.png')}
@@ -38,10 +101,13 @@ const Contacts = () => {
         </TouchableOpacity>
       </View>
 
-      <View style={styles.menu}>
-
-
-      </View>
+      <TabView
+        navigationState={{index, routes}}
+        renderScene={renderScene}
+        renderTabBar={renderTabBar}
+        onIndexChange={setIndex}
+        initialLayout={{width: screen.width}}
+      />
     </SafeAreaView>
   );
 };
@@ -110,3 +176,52 @@ const styles = StyleSheet.create({
     marginTop: 26,
   },
 });
+
+// import * as React from 'react';
+// import { View, useWindowDimensions, Text} from 'react-native';
+// import { TabView, TabBar, SceneMap } from 'react-native-tab-view';
+
+// const FirstRoute = () => (
+// 	<View style={{ flex: 1, backgroundColor: 'grey'}}>
+//   	<Text>Tab One</Text>
+// 	</View>
+// );
+// const SecondRoute = () => (
+// 	<View style={{ flex: 1, backgroundColor: 'darkgrey'}} >
+//   	<Text>Tab Two</Text>
+// 	</View>
+// );
+
+// export default function TabViewExample() {
+//   const layout = useWindowDimensions();
+
+//   const [index, setIndex] = React.useState(0);
+//   const [routes] = React.useState([
+// 	{ key: 'first', title: 'First' },
+// 	{ key: 'second', title: 'Second' },
+//   ]);
+
+//   const renderScene = SceneMap({
+// 	first: FirstRoute,
+// 	second: SecondRoute,
+//   });
+
+//   const renderTabBar = props => (
+//   	<TabBar
+//      	 {...props}
+//       	activeColor={'white'}
+//       	inactiveColor={'black'}
+//           style={{marginTop:25,backgroundColor:'red'}}
+//   	/>
+//   );
+
+//   return (
+//   	<TabView
+//       	navigationState={{ index, routes }}
+//       	renderScene={renderScene}
+//       	renderTabBar={renderTabBar}
+//       	onIndexChange={setIndex}
+//       	initialLayout={{ width: layout.width }}
+//   	/>
+//   );
+// }

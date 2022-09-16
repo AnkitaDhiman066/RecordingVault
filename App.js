@@ -1,9 +1,7 @@
-import {StatusBar, StyleSheet, Text, View} from 'react-native';
+import {StyleSheet} from 'react-native';
 import React from 'react';
 import {createStackNavigator} from '@react-navigation/stack';
 import {NavigationContainer} from '@react-navigation/native';
-import {SafeAreaProvider} from 'react-native-safe-area-context';
-import SafeAreaView from 'react-native-safe-area-view';
 import Splash from './src/screens/Splash';
 import Register from './src/screens/Register';
 import SetPhrase from './src/screens/SetPhrase';
@@ -16,51 +14,49 @@ import RecordVoice from './src/screens/RecordVoice';
 import RecordingVoice from './src/screens/RecordingVoice';
 import MyTapes from './src/screens/MyTapes';
 import Contacts from './src/screens/Contacts';
+import AddContact from './src/screens/AddContact';
+import EditContact from './src/screens/EditContact';
+import Notification from './src/screens/Notification';
 // import NewFile from './src/screens/NewFile';
 
 const Stack = createStackNavigator();
 
 const App = () => {
   return (
-    <SafeAreaProvider>
-      <StatusBar
-        translucent
-        backgroundColor="transparent"
-        barStyle="light-content"
-      />
+    <NavigationContainer>
+      {/* <StatusBar hidden={true}/> */}
+      <Stack.Navigator
+        initialRouteName="Contacts"
+        screenOptions={{
+          headerShown: false,
+        }}>
+        {/* setup screens */}
+        <Stack.Screen name="Splash" component={Splash} />
 
-      <NavigationContainer>
-        <Stack.Navigator
-          initialRouteName="Splash"
-          screenOptions={{
-            headerShown: false,
-          }}>
-          {/* setup screens */}
+        <Stack.Screen name="Register" component={Register} />
 
-          <Stack.Screen name="Splash" component={Splash} />
+        <Stack.Screen name="SetPhrase" component={SetPhrase} />
 
-          <Stack.Screen name="Register" component={Register} />
+        <Stack.Screen name="ConfirmPhrase" component={ConfirmPhrase} />
 
-          <Stack.Screen name="SetPhrase" component={SetPhrase} />
+        <Stack.Screen name="Recording" component={Recording} />
 
-          <Stack.Screen name="ConfirmPhrase" component={ConfirmPhrase} />
+        <Stack.Screen name="ConfirmRecording" component={ConfirmRecording} />
 
-          <Stack.Screen name="Recording" component={Recording} />
+        <Stack.Screen name="Successful" component={Successful} />
 
-          <Stack.Screen name="ConfirmRecording" component={ConfirmRecording} />
+        {/* After account setup screens */}
 
-          <Stack.Screen name="Successful" component={Successful} />
-
-          {/* After account setup screens */}
-
-          <Stack.Screen name="Home" component={Home} />
-          <Stack.Screen name="MyTapes" component={MyTapes} />
-          <Stack.Screen name="RecordVoice" component={RecordVoice} />
-          <Stack.Screen name="RecordingVoice" component={RecordingVoice} />
-          <Stack.Screen name="Contacts" component={Contacts} />
-        </Stack.Navigator>
-      </NavigationContainer>
-    </SafeAreaProvider>
+        <Stack.Screen name="Home" component={Home} />
+        <Stack.Screen name="MyTapes" component={MyTapes} />
+        <Stack.Screen name="RecordVoice" component={RecordVoice} />
+        <Stack.Screen name="RecordingVoice" component={RecordingVoice} />
+        <Stack.Screen name="Contacts" component={Contacts} />
+        <Stack.Screen name="AddContact" component={AddContact} />
+        <Stack.Screen name="EditContact" component={EditContact} />
+        <Stack.Screen name="Notification" component={Notification} />
+      </Stack.Navigator>
+    </NavigationContainer>
   );
 };
 

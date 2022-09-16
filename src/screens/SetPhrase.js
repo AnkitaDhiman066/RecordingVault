@@ -5,12 +5,19 @@ import {
   View,
   ImageBackground,
   TouchableOpacity,
+  StatusBar,
+  SafeAreaView,
 } from 'react-native';
 import React from 'react';
 
 const SetPhrase = ({navigation}) => {
   return (
-    <View>
+    <SafeAreaView>
+      <StatusBar
+        translucent
+        backgroundColor="transparent"
+        barStyle="light-content"
+      />
       <ImageBackground
         source={require('../../assets/images/BackGround2.png')}
         resizeMode="cover"
@@ -98,7 +105,7 @@ const SetPhrase = ({navigation}) => {
           </View>
         </View>
       </ImageBackground>
-    </View>
+    </SafeAreaView>
   );
 };
 

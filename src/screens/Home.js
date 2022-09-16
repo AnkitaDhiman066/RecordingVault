@@ -19,7 +19,11 @@ const screen = Dimensions.get('screen');
 const Home = ({navigation}) => {
   return (
     <SafeAreaView style={styles.container}>
-      <StatusBar translucent backgroundColor="transparent" />
+      <StatusBar
+        translucent
+        backgroundColor="transparent"
+        barStyle="light-content"
+      />
       <ImageBackground
         source={require('../../assets/images/BackGround.png')}
         style={{

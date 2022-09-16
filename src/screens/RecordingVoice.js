@@ -20,7 +20,11 @@ const RecordingVoice = ({navigation}) => {
   const [isShow, setShow] = useState(false);
   return (
     <SafeAreaView style={styles.container}>
-      <StatusBar translucent backgroundColor="transparent" />
+         <StatusBar
+        translucent
+        backgroundColor="transparent"
+        barStyle="dark-content"
+      />
       <ImageBackground
         source={require('../../assets/images/Vector.png')}
         style={styles.circle}

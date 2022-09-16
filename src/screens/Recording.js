@@ -5,12 +5,21 @@ import {
   View,
   ImageBackground,
   TouchableOpacity,
+  StatusBar,
+  SafeAreaView,
 } from 'react-native';
 import React from 'react';
 
 const Recording = ({navigation}) => {
   return (
-    <View>
+    <SafeAreaView>
+    {/* <View style={{flex: 1}}> */}
+      <StatusBar
+        translucent
+        backgroundColor="transparent"
+        barStyle="light-content"
+
+      />
       <ImageBackground
         source={require('../../assets/images/BackGround2.png')}
         resizeMode="cover"
@@ -112,7 +121,8 @@ const Recording = ({navigation}) => {
           </View>
         </View>
       </ImageBackground>
-    </View>
+    {/* </View> */}
+  </SafeAreaView>
   );
 };
 
