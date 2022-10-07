@@ -17,7 +17,24 @@ import Contacts from './src/screens/Contacts';
 import AddContact from './src/screens/AddContact';
 import EditContact from './src/screens/EditContact';
 import Notification from './src/screens/Notification';
-// import NewFile from './src/screens/NewFile';
+import HideChatScreen from './src/screens/HideChatScreen';
+import ChangeAccessPhrase from './src/screens/ChangeAccessPhrase';
+import RecordChangePhrase from './src/screens/RecordChangePhrase';
+import ConfirmChangePhrase from './src/screens/ConfirmChangePhrase';
+import ConfirmRecordChangePhrase from './src/screens/ConfirmRecordChangePhrase';
+import ChangePhraseSuccess from './src/screens/ChangePhraseSuccess';
+import RecoveryEmail from './src/screens/RecoveryEmail';
+import {createDrawerNavigator} from '@react-navigation/drawer';
+
+import HomePage from './src/components/Page/HomePage';
+import NewsPage from './src/components/Page/NewsPage';
+import NotificationPage from './src/components/Page/NotificationPage';
+
+// import HomePage from './Page/HomePage';
+// import NewsPage from './Page/NewsPage';
+// import NotificationPage from './Page/NotificationPage';
+
+const Drawer = createDrawerNavigator();
 
 const Stack = createStackNavigator();
 
@@ -26,7 +43,7 @@ const App = () => {
     <NavigationContainer>
       {/* <StatusBar hidden={true}/> */}
       <Stack.Navigator
-        initialRouteName="Contacts"
+        initialRouteName="RecoveryEmail"
         screenOptions={{
           headerShown: false,
         }}>
@@ -55,7 +72,49 @@ const App = () => {
         <Stack.Screen name="AddContact" component={AddContact} />
         <Stack.Screen name="EditContact" component={EditContact} />
         <Stack.Screen name="Notification" component={Notification} />
+        <Stack.Screen name="HideChatScreen" component={HideChatScreen} />
+        <Stack.Screen name="RecoveryEmail" component={RecoveryEmail} />
+
+        <Stack.Screen
+          name="ChangeAccessPhrase"
+          component={ChangeAccessPhrase}
+        />
+        <Stack.Screen
+          name="RecordChangePhrase"
+          component={RecordChangePhrase}
+        />
+        <Stack.Screen
+          name="ConfirmChangePhrase"
+          component={ConfirmChangePhrase}
+        />
+        <Stack.Screen
+          name="ConfirmRecordChangePhrase"
+          component={ConfirmRecordChangePhrase}
+        />
+        <Stack.Screen
+          name="ChangePhraseSuccess"
+          component={ChangePhraseSuccess}
+        />
       </Stack.Navigator>
+
+      {/* <Drawer.Navigator
+      drawerContentOptions={{
+        activeTintColor: '#e91e63',
+        itemStyle: {marginVertical: 5},
+      }}
+      // drawerContent={props => <CustomSidebarMenu {...props} />}
+      >
+      <Drawer.Screen
+        name="FirstPage"
+        options={{drawerLabel: 'First page Option'}}
+        component={HomePage}
+      />
+      <Drawer.Screen
+        name="SecondPage"
+        options={{drawerLabel: 'Second page Option'}}
+        component={NewsPage}
+      />
+    </Drawer.Navigator> */}
     </NavigationContainer>
   );
 };

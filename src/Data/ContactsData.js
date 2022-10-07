@@ -1,4 +1,4 @@
-export const Data = [
+export const ContactsData = [
   {
     id: '1',
     img: require('../../assets/images/Data/Thomas.png'),

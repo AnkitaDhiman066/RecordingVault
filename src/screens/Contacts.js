@@ -7,10 +7,12 @@ import {
   StatusBar,
   ImageBackground,
   Image,
+  Button,
   TouchableOpacity,
 } from 'react-native';
 import React, {useState} from 'react';
 import {TabView, TabBar, SceneMap} from 'react-native-tab-view';
+
 import ContactComponent from '../components/ContactComponent';
 import PhotoAlbumComponent from '../components/PhotoAlbumComponent';
 import TextComponent from '../components/TextComponent';
@@ -21,13 +23,21 @@ const ContactsRoute = navigation => (
   <ContactComponent navigation={navigation} />
 );
 
-const UploadRoute = navigation => <UploadComponent navigation={navigation} />;
+const UploadRoute = navigation => (
+<UploadComponent navigation={navigation} />
+);
 
-const PhotoRoute = () => <PhotoAlbumComponent />;
+const PhotoRoute = navigation => (
+  <PhotoAlbumComponent navigation={navigation} />
+);
 
-const VideoRoute = () => <VideosComponent />;
+const VideoRoute = navigation => (
+<VideosComponent navigation={navigation} />
+);
 
-const TextMsgRoute = () => <TextComponent />;
+const TextMsgRoute = navigation => (
+   <TextComponent navigation={navigation} />
+);
 
 const screen = Dimensions.get('screen');
 
@@ -35,9 +45,9 @@ const Contacts = ({navigation}) => {
   const renderScene = SceneMap({
     contacts: () => ContactsRoute(navigation),
     upload: () => UploadRoute(navigation),
-    photoAlbums: PhotoRoute,
-    videos: VideoRoute,
-    textMsg: TextMsgRoute,
+    photoAlbums: () => PhotoRoute(navigation),
+    videos: () => VideoRoute(navigation),
+    textMsg: () => TextMsgRoute(navigation),
   });
   const [index, setIndex] = useState(0);
 
@@ -85,7 +95,9 @@ const Contacts = ({navigation}) => {
         style={styles.circle}
       />
       <View style={styles.header}>
-        <TouchableOpacity>
+        <TouchableOpacity
+         onPress={ () => navigation.navigate('ChangeAccessPhrase') }
+        >
           <Image
             style={styles.image}
             source={require('../../assets/images/headerBlack.png')}
@@ -108,6 +120,10 @@ const Contacts = ({navigation}) => {
         onIndexChange={setIndex}
         initialLayout={{width: screen.width}}
       />
+
+      {/* <NavigationContainer> */}
+      {/* <MyDrawer /> */}
+      {/* </NavigationContainer> */}
     </SafeAreaView>
   );
 };

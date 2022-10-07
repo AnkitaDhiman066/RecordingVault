@@ -12,9 +12,11 @@ import React from 'react';
 import LinearGradient from 'react-native-linear-gradient';
 
 const screen = Dimensions.get('screen');
+
 const EditContact = ({navigation}) => {
   return (
     <View style={{backgroundColor: '#F6F7F9', flex: 1, alignItems: 'center'}}>
+    
       <View
         style={{
           flexDirection: 'row',

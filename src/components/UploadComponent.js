@@ -10,11 +10,97 @@ import {
 } from 'react-native';
 import React, {useState} from 'react';
 import Modal from 'react-native-modal';
-
+import FilePicker, {types} from 'react-native-document-picker';
+import {
+  // launchImageLibrary,
+  launchCamera,
+} from 'react-native-image-picker';
 const screen = Dimensions.get('screen');
 
 const UploadComponent = () => {
   const [modalVisible, setModalVisible] = useState(false);
+  const [filePath, setFilePath] = useState({
+    data: '',
+    uri: '',
+  });
+  const [fileData, setFileData] = useState('');
+  const [fileUri, setFileUri] = useState('');
+
+  const LaunchCamera = () => {
+    let options = {
+      storageOptions: {
+        skipBackup: true,
+        // saveToPhotos: true,
+        path: 'images',
+        // mediaType: 'mixed',
+      },
+    };
+    launchCamera(options, response => {
+      console.log('Response = ', response);
+
+      if (response.didCancel) {
+        console.log('User cancelled image picker');
+      } else if (response.error) {
+        console.log('ImagePicker Error: ', response.error);
+      } else if (response.customButton) {
+        console.log('User tapped custom button: ', response.customButton);
+        alert(response.customButton);
+      } else {
+        const source = {uri: response.uri};
+        console.log('response', JSON.stringify(response));
+        setFilePath(response),
+          setFileData(response.data),
+          setFileUri(response.uri);
+
+        setModalVisible(false);
+      }
+    });
+  };
+
+  const handleFilePicker1 = async () => {
+    try {
+      const res = await FilePicker.pick({
+        presentationStyle: 'fullScreen',
+        type: [types.images, types.video],
+      });
+      // setVisible1(false)
+      console.log(res, 'file');
+      // setResources_data(res)
+    } catch (error) {
+      console.log(error, 'file');
+      // setVisible1(false)
+    }
+  };
+
+  const LaunchImageLibrary = async () => {
+    // let options = {
+    //   storageOptions: {
+    //     skipBackup: true,
+    //     path: 'images',
+    //     // mediaType: 'mixed',
+    //     mediaType: 'mixed',
+    //     // selectionLimit: 0,
+    //   },
+    // };
+    // await launchImageLibrary(options, response => {
+    //   console.log('Response = ', response);
+    //   if (response.didCancel) {
+    //     console.log('User cancelled image picker');
+    //   } else if (response.error) {
+    //     console.log('ImagePicker Error: ', response.error);
+    //   } else if (response.customButton) {
+    //     console.log('User tapped custom button: ', response.customButton);
+    //     alert(response.customButton);
+    //   } else {
+    //     const source = {uri: response.uri};
+    //     console.log('response', JSON.stringify(response));
+    //     console.log(response.assets[0].fileName), setModalVisible(false);
+    //     setFilePath(response),
+    //       setFileData(response.data),
+    //       setFileUri(response.uri);
+    //   }
+    // });
+  };
   return (
     <View style={{flex: 1}}>
       <ImageBackground
@@ -48,17 +134,16 @@ const UploadComponent = () => {
       </ImageBackground>
       <View style={styles.centeredView}>
         <Modal
+          style={{margin: 0, backgroundColor: 'rgba(0,0,0,0.5)'}}
           animationType="slide"
           transparent={true}
           visible={modalVisible}
-          onBackdropPress={() => setModalVisible(false)}
-          onRequestClose={() => {
-            Alert.alert('Modal has been closed.');
-            setModalVisible(!modalVisible);
-          }}>
+          onBackdropPress={() => setModalVisible(false)}>
           <View style={styles.centeredView}>
             <View style={styles.modalView}>
-              <TouchableOpacity style={{height: 62, width: 159}}>
+              <TouchableOpacity
+                style={{height: 62, width: 159}}
+                onPress={() => handleFilePicker1()}>
                 <ImageBackground
                   source={require('../../assets/images/ButtonGradient.png')}
                   style={{
@@ -83,7 +168,9 @@ const UploadComponent = () => {
                   </Text>
                 </ImageBackground>
               </TouchableOpacity>
-              <TouchableOpacity style={{height: 62, width: 159}}>
+              <TouchableOpacity
+                onPress={() => LaunchCamera()}
+                style={{height: 62, width: 159}}>
                 <ImageBackground
                   source={require('../../assets/images/ButtonGradient.png')}
                   style={{
@@ -129,11 +216,10 @@ const styles = StyleSheet.create({
     justifyContent: 'space-between',
     borderTopLeftRadius: 30,
     borderTopRightRadius: 30,
-    height: 132,
+    height: 142,
     flexDirection: 'row',
-    backgroundColor: 'white',
+    backgroundColor: '#F6F7F9',
     padding: 35,
-    // alignItems: 'center',
     shadowColor: '#000',
     shadowOffset: {
       width: 0,
@@ -160,7 +246,6 @@ const styles = StyleSheet.create({
     textAlign: 'center',
   },
   modalText: {
-    marginBottom: 15,
     textAlign: 'center',
   },
 });

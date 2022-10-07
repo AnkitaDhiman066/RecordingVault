@@ -7,7 +7,7 @@ import {
   TouchableOpacity,
   Dimensions,
   TextInput,
-  SafeAreaView
+  SafeAreaView,
 } from 'react-native';
 import React from 'react';
 import LinearGradient from 'react-native-linear-gradient';
@@ -15,7 +15,8 @@ import LinearGradient from 'react-native-linear-gradient';
 const screen = Dimensions.get('screen');
 const AddContact = ({navigation}) => {
   return (
-    <SafeAreaView style={{backgroundColor: '#F6F7F9', flex: 1, alignItems: 'center'}}>
+    <SafeAreaView
+      style={{backgroundColor: '#F6F7F9', flex: 1, alignItems: 'center'}}>
       <View
         style={{
           flexDirection: 'row',
@@ -63,7 +64,7 @@ const AddContact = ({navigation}) => {
             borderWidth: 1.8,
             borderColor: '#009FA3',
           }}
-          source={require('../../assets/images/Data/Lily.png')}
+          source={require('../../assets/images/profile.png')}
         />
         <View
           style={{

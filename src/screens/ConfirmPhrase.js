@@ -89,7 +89,7 @@ const ConfirmPhrase = ({navigation}) => {
             }}>
             <TouchableOpacity
               onPress={() => {
-                navigation.navigate('ConfirmRecording');
+                navigation.navigate('ConfirmChangePhrase');
               }}
               style={{
                 height: 60,

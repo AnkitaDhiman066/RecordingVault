@@ -12,7 +12,7 @@ import {
 } from 'react-native';
 import * as React from 'react';
 import {useState} from 'react';
-import {Data} from '../Data/Data';
+import {ContactsData} from '../Data/ContactsData';
 import Swipeable from 'react-native-gesture-handler/Swipeable';
 
 const screen = Dimensions.get('screen');
@@ -124,7 +124,8 @@ const ContactComponent = ({navigation}) => {
                 color: '#153142',
                 opacity: 0.4,
               }}>
-              {item.ph_no}
+              {' '}
+              {item.ph_no}{' '}
             </Text>
           </View>
         </View>
@@ -168,7 +169,7 @@ const ContactComponent = ({navigation}) => {
       </View>
 
       <FlatList
-        data={Data}
+        data={ContactsData}
         renderItem={renderItem}
         keyExtractor={item => item.id}
         ItemSeparatorComponent={() => <Separator />}
